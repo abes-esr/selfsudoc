@@ -52,6 +52,7 @@ import com.itextpdf.text.Phrase;
 import com.itextpdf.text.TextElementArray;
 import com.itextpdf.text.html.Markup;
 import com.itextpdf.text.pdf.PdfPCell;
+import com.itextpdf.text.pdf.PdfWriter;
 /**
  *
  * @author  psoares
@@ -102,6 +103,10 @@ public class IncCell implements TextElementArray {
         cell.setUseDescender(true);
         value = props.getProperty("bgcolor");
         cell.setBackgroundColor(Markup.decodeColor(value));
+        //set PdfPCell writing direction with Right To Left when tag has a property class="direction" 
+		if (props.hasProperty("direction")) {
+			cell.setRunDirection(PdfWriter.RUN_DIRECTION_RTL);
+		}        
     }
 
     public boolean add(Element o) {
