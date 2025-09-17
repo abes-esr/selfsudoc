@@ -185,7 +185,7 @@ class Type1Font extends BaseFont
                     resourceAnchor = new FontsResourceAnchor();
                 is = getResourceStream(RESOURCE_PATH + afmFile + ".afm", resourceAnchor.getClass().getClassLoader());
                 if (is == null) {
-                    String msg = MessageLocalization.getComposedMessage("1.not.found.as.resource", afmFile);
+                    String msg = MessageLocalization.getComposedMessage("{1}.not.found.as.resource", afmFile);
                     System.err.println(msg);
                     throw new DocumentException(msg);
                 }
@@ -266,7 +266,7 @@ class Type1Font extends BaseFont
             }
         }
         else
-            throw new DocumentException(MessageLocalization.getComposedMessage("1.is.not.an.afm.or.pfm.font.file", afmFile));
+            throw new DocumentException(MessageLocalization.getComposedMessage("{1}.is.not.an.afm.or.pfm.font.file", afmFile));
 
         EncodingScheme = EncodingScheme.trim();
         if (EncodingScheme.equals("AdobeStandardEncoding") || EncodingScheme.equals("StandardEncoding")) {
@@ -388,7 +388,7 @@ class Type1Font extends BaseFont
             }
         }
         if (!isMetrics)
-            throw new DocumentException(MessageLocalization.getComposedMessage("missing.startcharmetrics.in.1", fileName));
+            throw new DocumentException(MessageLocalization.getComposedMessage("missing.startcharmetrics.in.{1}", fileName));
         while ((line = rf.readLine()) != null)
         {
             StringTokenizer tok = new StringTokenizer(line);
@@ -431,7 +431,7 @@ class Type1Font extends BaseFont
             CharMetrics.put(N, metrics);
         }
         if (isMetrics)
-            throw new DocumentException(MessageLocalization.getComposedMessage("missing.endcharmetrics.in.1", fileName));
+            throw new DocumentException(MessageLocalization.getComposedMessage("missing.endcharmetrics.in.{1}", fileName));
         if (!CharMetrics.containsKey("nonbreakingspace")) {
             Object[] space = CharMetrics.get("space");
             if (space != null)
@@ -452,7 +452,7 @@ class Type1Font extends BaseFont
             }
         }
         if (!isMetrics)
-            throw new DocumentException(MessageLocalization.getComposedMessage("missing.endfontmetrics.in.1", fileName));
+            throw new DocumentException(MessageLocalization.getComposedMessage("missing.endfontmetrics.in.{1}", fileName));
         while ((line = rf.readLine()) != null)
         {
             StringTokenizer tok = new StringTokenizer(line);
@@ -484,7 +484,7 @@ class Type1Font extends BaseFont
             }
         }
         if (isMetrics)
-            throw new DocumentException(MessageLocalization.getComposedMessage("missing.endkernpairs.in.1", fileName));
+            throw new DocumentException(MessageLocalization.getComposedMessage("missing.endkernpairs.in.{1}", fileName));
         rf.close();
     }
 
@@ -513,9 +513,9 @@ class Type1Font extends BaseFont
             int bytePtr = 0;
             for (int k = 0; k < 3; ++k) {
                 if (rf.read() != 0x80)
-                    throw new DocumentException(MessageLocalization.getComposedMessage("start.marker.missing.in.1", filePfb));
+                    throw new DocumentException(MessageLocalization.getComposedMessage("start.marker.missing.in.{1}", filePfb));
                 if (rf.read() != PFB_TYPES[k])
-                    throw new DocumentException(MessageLocalization.getComposedMessage("incorrect.segment.type.in.1", filePfb));
+                    throw new DocumentException(MessageLocalization.getComposedMessage("incorrect.segment.type.in.{1}", filePfb));
                 int size = rf.read();
                 size += rf.read() << 8;
                 size += rf.read() << 16;
@@ -524,7 +524,7 @@ class Type1Font extends BaseFont
                 while (size != 0) {
                     int got = rf.read(st, bytePtr, size);
                     if (got < 0)
-                        throw new DocumentException(MessageLocalization.getComposedMessage("premature.end.in.1", filePfb));
+                        throw new DocumentException(MessageLocalization.getComposedMessage("premature.end.in.{1}", filePfb));
                     bytePtr += got;
                     size -= got;
                 }
