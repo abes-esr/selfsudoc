@@ -1,5 +1,5 @@
 /*
- * $Id: RtfListLevel.java 3580 2008-08-06 15:52:00Z howard_s $
+ * $Id$
  *
  * Copyright 2008 by Howard Shank (hgshank@yahoo.com)
  *
@@ -52,12 +52,10 @@ import java.awt.Color;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.itextpdf.text.BaseColor;
-import com.itextpdf.text.Chunk;
-import com.itextpdf.text.DocWriter;
-import com.itextpdf.text.Element;
-import com.itextpdf.text.Font;
-import com.itextpdf.text.Font.FontFamily;
+import com.lowagie.text.Chunk;
+import com.lowagie.text.DocWriter;
+import com.lowagie.text.Element;
+import com.lowagie.text.Font;
 import com.lowagie.text.rtf.RtfElement;
 import com.lowagie.text.rtf.RtfExtendedElement;
 import com.lowagie.text.rtf.document.RtfDocument;
@@ -70,7 +68,7 @@ import com.lowagie.text.rtf.text.RtfParagraph;
 /**
  * The RtfListLevel is a listlevel object in a list.
  * 
- * @version $Id: RtfListLevel.java 3580 2008-08-06 15:52:00Z howard_s $
+ * @version $Id$
  * @author Howard Shank (hgshank@yahoo.com)
  * @since 2.1.3
  */
@@ -329,8 +327,8 @@ public class RtfListLevel extends RtfElement implements RtfExtendedElement {
 	{
 		super(doc);
 		templateID = document.getRandomInt();
-        setFontNumber( new RtfFont(document, new Font(FontFamily.TIMES_ROMAN, 10, Font.NORMAL, new BaseColor (new Color(0, 0, 0)))));
-        setBulletFont(new Font(FontFamily.SYMBOL, 10, Font.NORMAL, new BaseColor (new Color(0, 0, 0))));
+        setFontNumber( new RtfFont(document, new Font(Font.TIMES_ROMAN, 10, Font.NORMAL, new Color(0, 0, 0))));
+        setBulletFont(new Font(Font.SYMBOL, 10, Font.NORMAL, new Color(0, 0, 0)));
 	}
 	
 	public RtfListLevel(RtfDocument doc, RtfList parent)
@@ -338,8 +336,8 @@ public class RtfListLevel extends RtfElement implements RtfExtendedElement {
 		super(doc);
 		this.parent = parent;
 		templateID = document.getRandomInt();
-		setFontNumber( new RtfFont(document, new Font(FontFamily.TIMES_ROMAN, 10, Font.NORMAL, new BaseColor (new Color(0, 0, 0)))));
-        setBulletFont(new Font(FontFamily.SYMBOL, 10, Font.NORMAL, new BaseColor (new Color(0, 0, 0))));
+		setFontNumber( new RtfFont(document, new Font(Font.TIMES_ROMAN, 10, Font.NORMAL, new Color(0, 0, 0))));
+        setBulletFont(new Font(Font.SYMBOL, 10, Font.NORMAL, new Color(0, 0, 0)));
 	}
 	
 	public RtfListLevel(RtfListLevel ll)

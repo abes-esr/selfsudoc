@@ -1,5 +1,5 @@
 /*
- * $Id: RtfDestinationFontTable.java 3832 2009-04-04 13:18:12Z blowagie $
+ * $Id$
  *
  * Copyright 2007 by Howard Shank (hgshank@yahoo.com)
  *
@@ -54,8 +54,8 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Properties;
 
-import com.itextpdf.text.Font;
-import com.itextpdf.text.FontFactory;
+import com.lowagie.text.Font;
+import com.lowagie.text.FontFactory;
 import com.lowagie.text.rtf.parser.RtfImportMgr;
 import com.lowagie.text.rtf.parser.RtfParser;
 import com.lowagie.text.rtf.parser.ctrlwords.RtfCtrlWordData;

@@ -1,5 +1,5 @@
 /*
- * $Id: RtfImportMgr.java 3456 2008-05-26 15:26:57Z howard_s $
+ * $Id$
  *
  * Copyright 2007 by Howard Shank (hgshank@yahoo.com)
  *
@@ -52,8 +52,8 @@ package com.lowagie.text.rtf.parser;
 import java.awt.Color;
 import java.util.HashMap;
 
-import com.itextpdf.text.Document;
-import com.itextpdf.text.List;
+import com.lowagie.text.Document;
+import com.lowagie.text.List;
 import com.lowagie.text.rtf.document.RtfDocument;
 import com.lowagie.text.rtf.list.RtfList;
 import com.lowagie.text.rtf.style.RtfColor;

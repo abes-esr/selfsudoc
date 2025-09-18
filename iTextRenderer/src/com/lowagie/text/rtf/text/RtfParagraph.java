@@ -1,5 +1,5 @@
 /*
- * $Id: RtfParagraph.java 3670 2009-02-01 09:13:48Z blowagie $
+ * $Id$
  *
  * Copyright 2001, 2002, 2003, 2004 by Mark Hall
  *
@@ -52,11 +52,11 @@ package com.lowagie.text.rtf.text;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.itextpdf.text.Chunk;
-import com.itextpdf.text.DocWriter;
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.Element;
-import com.itextpdf.text.Paragraph;
+import com.lowagie.text.Chunk;
+import com.lowagie.text.DocWriter;
+import com.lowagie.text.DocumentException;
+import com.lowagie.text.Element;
+import com.lowagie.text.Paragraph;
 import com.lowagie.text.rtf.RtfBasicElement;
 import com.lowagie.text.rtf.RtfElement;
 import com.lowagie.text.rtf.document.RtfDocument;
@@ -69,7 +69,7 @@ import com.lowagie.text.rtf.style.RtfParagraphStyle;
  * The RtfParagraph is an extension of the RtfPhrase that adds alignment and
  * indentation properties. It wraps a Paragraph.
  * 
- * @version $Id: RtfParagraph.java 3670 2009-02-01 09:13:48Z blowagie $
+ * @version $Id$
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Thomas Bickel (tmb99@inode.at)
  */

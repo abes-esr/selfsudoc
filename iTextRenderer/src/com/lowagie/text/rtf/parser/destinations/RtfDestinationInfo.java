@@ -1,5 +1,5 @@
 /*
- * $Id: RtfDestinationInfo.java 3373 2008-05-12 16:21:24Z xlv $
+ * $Id$
  *
  * Copyright 2007 by Howard Shank (hgshank@yahoo.com)
  *
@@ -49,8 +49,8 @@
  
 package com.lowagie.text.rtf.parser.destinations;
 
-import com.itextpdf.text.Document;
-import com.itextpdf.text.Meta;
+import com.lowagie.text.Document;
+import com.lowagie.text.Meta;
 import com.lowagie.text.rtf.document.RtfDocument;
 import com.lowagie.text.rtf.document.RtfInfoElement;
 import com.lowagie.text.rtf.parser.RtfParser;

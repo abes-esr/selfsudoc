@@ -51,22 +51,22 @@ package com.lowagie.text.rtf;
 
 import java.util.ArrayList;
 
-import com.itextpdf.text.Anchor;
-import com.itextpdf.text.Annotation;
-import com.itextpdf.text.Chapter;
-import com.itextpdf.text.Chunk;
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.Element;
-import com.itextpdf.text.Image;
-import com.itextpdf.text.List;
-import com.itextpdf.text.ListItem;
-import com.itextpdf.text.Meta;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.Phrase;
-import com.itextpdf.text.Section;
-import com.itextpdf.text.pdf.PdfPTable;
+import com.lowagie.text.Anchor;
+import com.lowagie.text.Annotation;
+import com.lowagie.text.Chapter;
+import com.lowagie.text.Chunk;
+import com.lowagie.text.DocumentException;
+import com.lowagie.text.Element;
+import com.lowagie.text.Image;
+import com.lowagie.text.List;
+import com.lowagie.text.ListItem;
+import com.lowagie.text.Meta;
+import com.lowagie.text.Paragraph;
+import com.lowagie.text.Phrase;
+import com.lowagie.text.Section;
 import com.lowagie.text.SimpleTable;
 import com.lowagie.text.Table;
+import com.lowagie.text.pdf.PdfPTable;
 import com.lowagie.text.rtf.document.RtfDocument;
 import com.lowagie.text.rtf.document.RtfInfoElement;
 import com.lowagie.text.rtf.field.RtfAnchor;
@@ -85,10 +85,10 @@ import com.lowagie.text.rtf.text.RtfTab;
 
 
 /**
- * The RtfMapper provides mappings between com.itextpdf.text.* classes
+ * The RtfMapper provides mappings between com.lowagie.text.* classes
  * and the corresponding com.lowagie.text.rtf.** classes.
  * 
- * @version $Revision: 3868 $
+ * @version $Revision$
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  */
 public class RtfMapper {
@@ -182,7 +182,7 @@ public class RtfMapper {
     		case Element.CHAPTER:
     		    rtfElements.add(new RtfChapter(rtfDoc, (Chapter) element));
     			break;
-    		case com.lowagie.text.Element.TABLE:
+    		case Element.TABLE:
     			try {
     				rtfElements.add(new RtfTable(rtfDoc, (Table) element));
     			}

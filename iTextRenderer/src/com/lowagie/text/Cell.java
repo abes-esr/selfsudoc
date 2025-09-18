@@ -1,5 +1,5 @@
 /*
- * $Id: Cell.java 3373 2008-05-12 16:21:24Z xlv $
+ * $Id$
  *
  * Copyright 1999, 2000, 2001, 2002 by Bruno Lowagie.
  *
@@ -52,18 +52,7 @@ package com.lowagie.text;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import com.itextpdf.text.BadElementException;
-import com.itextpdf.text.Chunk;
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.Element;
-import com.itextpdf.text.ElementListener;
-import com.itextpdf.text.ElementTags;
-import com.itextpdf.text.List;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.Phrase;
-import com.itextpdf.text.Rectangle;
-import com.itextpdf.text.TextElementArray;
-import com.itextpdf.text.pdf.PdfPCell;
+import com.lowagie.text.pdf.PdfPCell;
 
 /**
  * A <CODE>Cell</CODE> is a <CODE>Rectangle</CODE> containing other
@@ -250,7 +239,7 @@ public class Cell extends Rectangle implements TextElementArray {
 	 * @return	a type
 	 */
 	public int type() {
-		return com.lowagie.text.Element.CELL;
+		return Element.CELL;
 	}
 
 	/**
@@ -602,7 +591,7 @@ public class Cell extends Rectangle implements TextElementArray {
 	 */
 	public boolean isTable() {
 		return (size() == 1)
-			&& (((Element)arrayList.get(0)).type() == com.lowagie.text.Element.TABLE);
+			&& (((Element)arrayList.get(0)).type() == Element.TABLE);
 	}
 	
 	/**
@@ -625,8 +614,8 @@ public class Cell extends Rectangle implements TextElementArray {
 		}
 		switch(element.type()) {
 			case Element.LISTITEM:
-			case com.lowagie.text.Element.ROW:
-			case com.lowagie.text.Element.CELL:
+			case Element.ROW:
+			case Element.CELL:
 				throw new BadElementException("You can't add listitems, rows or cells to a cell.");
 			case Element.LIST:
 				List list = (List)element;
@@ -650,7 +639,7 @@ public class Cell extends Rectangle implements TextElementArray {
 				if (((Chunk) element).isEmpty()) return;
 				arrayList.add(element);
 				return;
-			case com.lowagie.text.Element.TABLE:
+			case Element.TABLE:
 				Table table = new Table(3);
 				float[] widths = new float[3];
 				widths[1] = ((Table)element).getWidth();
@@ -715,11 +704,6 @@ public class Cell extends Rectangle implements TextElementArray {
 			throw new ClassCastException(bee.getMessage());
 		}
 	}
-	
-	public boolean add(Element paramElement) {
-		return add(paramElement);
-	}
-
 
 	// helper methods
 	

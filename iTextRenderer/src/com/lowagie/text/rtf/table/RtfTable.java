@@ -1,5 +1,5 @@
 /*
- * $Id: RtfTable.java 3533 2008-07-07 21:27:13Z Howard_s $
+ * $Id$
  *
  * Copyright 2001, 2002, 2003, 2004 by Mark Hall
  *
@@ -54,11 +54,11 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import com.itextpdf.text.Element;
-import com.itextpdf.text.pdf.PdfPRow;
-import com.itextpdf.text.pdf.PdfPTable;
+import com.lowagie.text.Element;
 import com.lowagie.text.Row;
 import com.lowagie.text.Table;
+import com.lowagie.text.pdf.PdfPRow;
+import com.lowagie.text.pdf.PdfPTable;
 import com.lowagie.text.rtf.RtfElement;
 import com.lowagie.text.rtf.document.RtfDocument;
 import com.lowagie.text.rtf.style.RtfFont;
@@ -69,7 +69,7 @@ import com.lowagie.text.rtf.text.RtfParagraph;
  * The RtfTable wraps a Table.
  * INTERNAL USE ONLY
  * 
- * @version $Id: RtfTable.java 3533 2008-07-07 21:27:13Z Howard_s $
+ * @version $Id$
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Steffen Stundzig
  * @author Benoit Wiart

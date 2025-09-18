@@ -1,5 +1,5 @@
 /*
- * $Id: RtfBorder.java 3580 2008-08-06 15:52:00Z howard_s $
+ * $Id$
  *
  * Copyright 2001, 2002, 2003, 2004 by Mark Hall
  *
@@ -53,8 +53,7 @@ import java.awt.Color;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.itextpdf.text.BaseColor;
-import com.itextpdf.text.DocWriter;
+import com.lowagie.text.DocWriter;
 import com.lowagie.text.rtf.RtfElement;
 import com.lowagie.text.rtf.document.RtfDocument;
 import com.lowagie.text.rtf.style.RtfColor;
@@ -64,7 +63,7 @@ import com.lowagie.text.rtf.style.RtfColor;
  * The RtfBorder handle one row or cell border.
  * INTERNAL USE ONLY
  * 
- * @version $Id: RtfBorder.java 3580 2008-08-06 15:52:00Z howard_s $
+ * @version $Id$
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Thomas Bickel (tmb99@inode.at)
  */
@@ -406,22 +405,6 @@ public class RtfBorder extends RtfElement {
      * @param borderColor The color of this RtfBorder
      */
     protected RtfBorder(RtfDocument doc, int borderType, int borderPosition, int borderStyle, float borderWidth, Color borderColor) {
-        super(doc);
-        this.borderType = borderType;
-        this.borderPosition = borderPosition;
-        this.borderStyle = borderStyle;
-        this.borderWidth = (int) Math.min((borderWidth * TWIPS_FACTOR), 75);
-        if(this.borderWidth == 0) {
-            this.borderStyle = BORDER_NONE;
-        }
-        if(borderColor == null) {
-            this.borderColor = new RtfColor(this.document, new Color(0, 0, 0));
-        } else {
-            this.borderColor = new RtfColor(this.document, borderColor);
-        }
-    }
-    
-    protected RtfBorder(RtfDocument doc, int borderType, int borderPosition, int borderStyle, float borderWidth, BaseColor borderColor) {
         super(doc);
         this.borderType = borderType;
         this.borderPosition = borderPosition;

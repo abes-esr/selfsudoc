@@ -1,5 +1,5 @@
 /*
- * $Id: RtfParser.java 3580 2008-08-06 15:52:00Z howard_s $
+ * $Id$
  *
  * Copyright 2007 by Howard Shank (hgshank@yahoo.com)
  *
@@ -60,10 +60,10 @@ import java.util.EventListener;
 import java.util.Iterator;
 import java.util.Stack;
 
-import com.itextpdf.text.Document;
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.Element;
-import com.itextpdf.text.List;
+import com.lowagie.text.Document;
+import com.lowagie.text.DocumentException;
+import com.lowagie.text.Element;
+import com.lowagie.text.List;
 import com.lowagie.text.rtf.direct.RtfDirectContent;
 import com.lowagie.text.rtf.document.RtfDocument;
 import com.lowagie.text.rtf.parser.ctrlwords.RtfCtrlWordData;

@@ -1,5 +1,5 @@
 /*
- * $Id: RtfInfoGroup.java 3580 2008-08-06 15:52:00Z howard_s $
+ * $Id$
  *
  * Copyright 2003, 2004 by Mark Hall
  *
@@ -53,14 +53,14 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
 
-import com.itextpdf.text.DocWriter;
+import com.lowagie.text.DocWriter;
 import com.lowagie.text.rtf.RtfElement;
 
 
 /**
  * The RtfInfoGroup stores information group elements. 
  * 
- * @version $Id: RtfInfoGroup.java 3580 2008-08-06 15:52:00Z howard_s $
+ * @version $Id$
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Thomas Bickel (tmb99@inode.at)
  * @author Howard Shank (hgshank@yahoo.com)

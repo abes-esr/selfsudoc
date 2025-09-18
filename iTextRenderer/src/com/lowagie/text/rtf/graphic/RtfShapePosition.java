@@ -3,14 +3,14 @@ package com.lowagie.text.rtf.graphic;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.itextpdf.text.DocWriter;
+import com.lowagie.text.DocWriter;
 import com.lowagie.text.rtf.RtfAddableElement;
 
 /**
  * The RtfShapePosition stores position and ordering
  * information for one RtfShape.
  * 
- * @version $Id: RtfShapePosition.java 3580 2008-08-06 15:52:00Z howard_s $
+ * @version $Id$
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Thomas Bickel (tmb99@inode.at)
  */

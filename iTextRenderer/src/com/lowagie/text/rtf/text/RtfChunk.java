@@ -1,5 +1,5 @@
 /*
- * $Id: RtfChunk.java 3580 2008-08-06 15:52:00Z howard_s $
+ * $Id$
  *
  * Copyright 2001, 2002, 2003, 2004 by Mark Hall
  *
@@ -53,8 +53,8 @@ import java.awt.Color;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.itextpdf.text.Chunk;
-import com.itextpdf.text.DocWriter;
+import com.lowagie.text.Chunk;
+import com.lowagie.text.DocWriter;
 import com.lowagie.text.rtf.RtfElement;
 import com.lowagie.text.rtf.document.RtfDocument;
 import com.lowagie.text.rtf.style.RtfColor;
@@ -65,7 +65,7 @@ import com.lowagie.text.rtf.style.RtfFont;
  * The RtfChunk contains one piece of text. The smallest text element available
  * in iText.
  * 
- * @version $Id: RtfChunk.java 3580 2008-08-06 15:52:00Z howard_s $
+ * @version $Id$
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Thomas Bickel (tmb99@inode.at)
  */

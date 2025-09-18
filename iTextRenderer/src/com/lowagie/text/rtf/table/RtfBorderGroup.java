@@ -1,5 +1,5 @@
 /*
- * $Id: RtfBorderGroup.java 3427 2008-05-24 18:32:31Z xlv $
+ * $Id$
  *
  * Copyright 2001, 2002, 2003, 2004 by Mark Hall
  *
@@ -56,8 +56,7 @@ import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Map;
 
-import com.itextpdf.text.BaseColor;
-import com.itextpdf.text.Rectangle;
+import com.lowagie.text.Rectangle;
 import com.lowagie.text.rtf.RtfElement;
 import com.lowagie.text.rtf.document.RtfDocument;
 
@@ -66,7 +65,7 @@ import com.lowagie.text.rtf.document.RtfDocument;
  * The RtfBorderGroup represents a collection of RtfBorders to use in a RtfCell
  * or RtfTable.
  * 
- * @version $Id: RtfBorderGroup.java 3427 2008-05-24 18:32:31Z xlv $
+ * @version $Id$
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Thomas Bickel (tmb99@inode.at)
  */
@@ -139,13 +138,6 @@ public class RtfBorderGroup extends RtfElement {
         addBorder(bordersToUse, RtfBorder.BORDER_SINGLE, borderWidth, borderColor);
     }
     
-    protected RtfBorderGroup(RtfDocument doc, int borderType, int bordersToUse, float borderWidth, BaseColor borderColor) {
-        super(doc);
-        this.borderType = borderType;
-        this.borders = new Hashtable();
-        addBorder(bordersToUse, RtfBorder.BORDER_SINGLE, borderWidth, borderColor);
-    }
-    
     /**
      * Sets a border in the Hashtable of borders
      * 
@@ -159,11 +151,6 @@ public class RtfBorderGroup extends RtfElement {
         this.borders.put(new Integer(borderPosition), border);
     }
     
-    private void setBorder(int borderPosition, int borderStyle, float borderWidth, BaseColor borderColor) {
-        RtfBorder border = new RtfBorder(this.document, this.borderType, borderPosition, borderStyle, borderWidth, borderColor);
-        this.borders.put(new Integer(borderPosition), border);
-    }
-    
     /**
      * Adds borders to the RtfBorderGroup
      * 
@@ -173,25 +160,6 @@ public class RtfBorderGroup extends RtfElement {
      * @param borderColor The border color to use
      */
     public void addBorder(int bordersToAdd, int borderStyle, float borderWidth, Color borderColor) {
-        if((bordersToAdd & Rectangle.LEFT) == Rectangle.LEFT) {
-            setBorder(RtfBorder.LEFT_BORDER, borderStyle, borderWidth, borderColor);
-        }
-        if((bordersToAdd & Rectangle.TOP) == Rectangle.TOP) {
-            setBorder(RtfBorder.TOP_BORDER, borderStyle, borderWidth, borderColor);
-        }
-        if((bordersToAdd & Rectangle.RIGHT) == Rectangle.RIGHT) {
-            setBorder(RtfBorder.RIGHT_BORDER, borderStyle, borderWidth, borderColor);
-        }
-        if((bordersToAdd & Rectangle.BOTTOM) == Rectangle.BOTTOM) {
-            setBorder(RtfBorder.BOTTOM_BORDER, borderStyle, borderWidth, borderColor);
-        }
-        if((bordersToAdd & Rectangle.BOX) == Rectangle.BOX && this.borderType == RtfBorder.ROW_BORDER) {
-            setBorder(RtfBorder.VERTICAL_BORDER, borderStyle, borderWidth, borderColor);
-            setBorder(RtfBorder.HORIZONTAL_BORDER, borderStyle, borderWidth, borderColor);
-        }
-    }
-    
-    public void addBorder(int bordersToAdd, int borderStyle, float borderWidth, BaseColor borderColor) {
         if((bordersToAdd & Rectangle.LEFT) == Rectangle.LEFT) {
             setBorder(RtfBorder.LEFT_BORDER, borderStyle, borderWidth, borderColor);
         }

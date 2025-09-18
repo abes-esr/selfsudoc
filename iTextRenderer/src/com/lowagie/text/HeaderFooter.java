@@ -1,5 +1,5 @@
 /*
- * $Id: HeaderFooter.java 3373 2008-05-12 16:21:24Z xlv $
+ * $Id$
  *
  * Copyright 1999, 2000, 2001, 2002 by Bruno Lowagie.
  *
@@ -48,11 +48,6 @@
  */
 
 package com.lowagie.text;
-
-import com.itextpdf.text.Chunk;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.Phrase;
-import com.itextpdf.text.Rectangle;
 
 
 /**
@@ -186,10 +181,10 @@ public class HeaderFooter extends Rectangle {
         Paragraph paragraph = new Paragraph(before.getLeading());
         paragraph.add(before);
         if (numbered) {
-            paragraph.add(new Chunk(String.valueOf(pageN), before.getFont()));
+            paragraph.addSpecial(new Chunk(String.valueOf(pageN), before.getFont()));
         }
         if (after != null) {
-            paragraph.add(after);
+            paragraph.addSpecial(after);
         }
         paragraph.setAlignment(alignment);
         return paragraph;

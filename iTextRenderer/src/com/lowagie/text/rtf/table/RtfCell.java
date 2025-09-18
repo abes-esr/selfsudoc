@@ -1,5 +1,5 @@
 /*
- * $Id: RtfCell.java 3580 2008-08-06 15:52:00Z howard_s $
+ * $Id$
  *
  * Copyright 2001, 2002, 2003, 2004 by Mark Hall
  *
@@ -54,17 +54,17 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import com.itextpdf.text.BadElementException;
-import com.itextpdf.text.DocWriter;
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.Element;
-import com.itextpdf.text.Image;
-import com.itextpdf.text.List;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.Phrase;
-import com.itextpdf.text.pdf.PdfPCell;
-import com.itextpdf.text.pdf.PdfPTable;
+import com.lowagie.text.BadElementException;
 import com.lowagie.text.Cell;
+import com.lowagie.text.DocWriter;
+import com.lowagie.text.DocumentException;
+import com.lowagie.text.Element;
+import com.lowagie.text.Image;
+import com.lowagie.text.List;
+import com.lowagie.text.Paragraph;
+import com.lowagie.text.Phrase;
+import com.lowagie.text.pdf.PdfPCell;
+import com.lowagie.text.pdf.PdfPTable;
 import com.lowagie.text.rtf.RtfBasicElement;
 import com.lowagie.text.rtf.RtfExtendedElement;
 import com.lowagie.text.rtf.document.RtfDocument;
@@ -78,7 +78,7 @@ import com.lowagie.text.rtf.text.RtfParagraph;
  * The RtfCell is an extension of Cell, that supports a multitude of different
  * borderstyles.
  * 
- * @version $Id: RtfCell.java 3580 2008-08-06 15:52:00Z howard_s $
+ * @version $Id$
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Steffen Stundzig
  * @author Benoit Wiart

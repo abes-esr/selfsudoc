@@ -5,10 +5,10 @@ import java.awt.Point;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.itextpdf.text.DocWriter;
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.ExceptionConverter;
-import com.itextpdf.text.Image;
+import com.lowagie.text.DocWriter;
+import com.lowagie.text.DocumentException;
+import com.lowagie.text.ExceptionConverter;
+import com.lowagie.text.Image;
 import com.lowagie.text.rtf.RtfAddableElement;
 
 /**
@@ -30,7 +30,7 @@ import com.lowagie.text.rtf.RtfAddableElement;
  *   <li>Point[]</li>
  * </ul>
  * 
- * @version $Id: RtfShapeProperty.java 3580 2008-08-06 15:52:00Z howard_s $
+ * @version $Id$
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Thomas Bickel (tmb99@inode.at)
  */

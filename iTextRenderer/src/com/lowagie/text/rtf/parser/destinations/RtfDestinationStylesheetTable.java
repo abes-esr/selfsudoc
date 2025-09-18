@@ -1,5 +1,5 @@
 /*
- * $Id: RtfDestinationStylesheetTable.java 3580 2008-08-06 15:52:00Z howard_s $
+ * $Id$
  *
  * Copyright 2007 by Howard Shank (hgshank@yahoo.com)
  *
@@ -49,7 +49,7 @@
  
 package com.lowagie.text.rtf.parser.destinations;
 
-import com.itextpdf.text.Element;
+import com.lowagie.text.Element;
 import com.lowagie.text.rtf.parser.RtfImportMgr;
 import com.lowagie.text.rtf.parser.RtfParser;
 import com.lowagie.text.rtf.parser.ctrlwords.RtfCtrlWordData;

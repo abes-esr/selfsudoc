@@ -1,5 +1,5 @@
 /*
- * $Id: RtfDestinationListTable.java 3735 2009-02-26 01:44:03Z xlv $
+ * $Id$
  *
  * Copyright 2007 by Howard Shank (hgshank@yahoo.com)
  *
@@ -49,7 +49,7 @@
 
 package com.lowagie.text.rtf.parser.destinations;
 
-import com.itextpdf.text.Element;
+import com.lowagie.text.Element;
 import com.lowagie.text.rtf.list.RtfList;
 import com.lowagie.text.rtf.list.RtfListLevel;
 import com.lowagie.text.rtf.parser.RtfImportMgr;

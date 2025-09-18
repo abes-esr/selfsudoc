@@ -54,9 +54,9 @@ package com.lowagie.text.rtf;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.itextpdf.text.Chunk;
-import com.itextpdf.text.DocWriter;
-import com.itextpdf.text.Font;
+import com.lowagie.text.Chunk;
+import com.lowagie.text.DocWriter;
+import com.lowagie.text.Font;
 import com.lowagie.text.rtf.document.RtfDocument;
 
 /**

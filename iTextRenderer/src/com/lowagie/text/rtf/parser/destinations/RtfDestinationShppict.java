@@ -1,5 +1,5 @@
 /*
- * $Id: RtfDestinationShppict.java 3453 2008-05-26 03:02:41Z xlv $
+ * $Id$
  *
  * Copyright 2007, 2008 by Howard Shank (hgshank@yahoo.com)
  *
@@ -53,10 +53,10 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
-import com.itextpdf.text.BadElementException;
-import com.itextpdf.text.Document;
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.Image;
+import com.lowagie.text.BadElementException;
+import com.lowagie.text.Document;
+import com.lowagie.text.DocumentException;
+import com.lowagie.text.Image;
 import com.lowagie.text.rtf.direct.RtfDirectContent;
 import com.lowagie.text.rtf.parser.RtfParser;
 import com.lowagie.text.rtf.parser.ctrlwords.RtfCtrlWordData;

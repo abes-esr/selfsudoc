@@ -1,5 +1,5 @@
 /*
- * $Id: Table.java 3754 2009-03-04 19:05:20Z blowagie $
+ * $Id$
  *
  * Copyright 1999, 2000, 2001, 2002 by Bruno Lowagie.
  *
@@ -57,17 +57,8 @@ import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import com.itextpdf.text.BadElementException;
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.Element;
-import com.itextpdf.text.ElementListener;
-import com.itextpdf.text.ElementTags;
-import com.itextpdf.text.ExceptionConverter;
-import com.itextpdf.text.LargeElement;
-import com.itextpdf.text.Phrase;
-import com.itextpdf.text.Rectangle;
-import com.itextpdf.text.pdf.PdfPCell;
-import com.itextpdf.text.pdf.PdfPTable;
+import com.lowagie.text.pdf.PdfPCell;
+import com.lowagie.text.pdf.PdfPTable;
 
 /**
  * A <CODE>Table</CODE> is a <CODE>Rectangle</CODE> that contains <CODE>Cell</CODE>s,
@@ -323,7 +314,7 @@ public class Table extends Rectangle implements LargeElement {
      * @return  a type
      */
     public int type() {
-        return com.lowagie.text.Element.TABLE;
+        return Element.TABLE;
     }
     
     /**
@@ -1453,7 +1444,7 @@ public class Table extends Rectangle implements LargeElement {
 	
 	/**
 	 * @since	iText 2.0.8
-	 * @see com.itextpdf.text.LargeElement#flushContent()
+	 * @see com.lowagie.text.LargeElement#flushContent()
 	 */
 	public void flushContent() {		
 		this.setNotAddedYet(false);
@@ -1466,7 +1457,7 @@ public class Table extends Rectangle implements LargeElement {
 
 	/**
      * @since	iText 2.0.8
-	 * @see com.itextpdf.text.LargeElement#isComplete()
+	 * @see com.lowagie.text.LargeElement#isComplete()
 	 */
 	public boolean isComplete() {
 		return complete;
@@ -1474,7 +1465,7 @@ public class Table extends Rectangle implements LargeElement {
 
 	/**
      * @since	iText 2.0.8
-	 * @see com.itextpdf.text.LargeElement#setComplete(boolean)
+	 * @see com.lowagie.text.LargeElement#setComplete(boolean)
 	 */
 	public void setComplete(boolean complete) {
 		this.complete = complete;
