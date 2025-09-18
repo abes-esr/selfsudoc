@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: RtfAnnotation.java 3580 2008-08-06 15:52:00Z howard_s $
  *
  * Copyright 2001, 2002, 2003, 2004 by Mark Hall
  *
@@ -52,8 +52,8 @@ package com.lowagie.text.rtf.text;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.lowagie.text.Annotation;
-import com.lowagie.text.DocWriter;
+import com.itextpdf.text.Annotation;
+import com.itextpdf.text.DocWriter;
 import com.lowagie.text.rtf.RtfElement;
 import com.lowagie.text.rtf.document.RtfDocument;
 
@@ -62,7 +62,7 @@ import com.lowagie.text.rtf.document.RtfDocument;
  * The RtfAnnotation provides support for adding Annotations to the rtf document.
  * Only simple Annotations with Title / Content are supported.
  * 
- * @version $Id$
+ * @version $Id: RtfAnnotation.java 3580 2008-08-06 15:52:00Z howard_s $
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Thomas Bickel (tmb99@inode.at)
  */

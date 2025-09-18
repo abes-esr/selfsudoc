@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: RtfHeaderFooterGroup.java 3373 2008-05-12 16:21:24Z xlv $
  *
  * Copyright 2001, 2002, 2003, 2004 by Mark Hall
  *
@@ -52,8 +52,8 @@ package com.lowagie.text.rtf.headerfooter;
 import java.io.IOException;
 import java.io.OutputStream;
 
+import com.itextpdf.text.Phrase;
 import com.lowagie.text.HeaderFooter;
-import com.lowagie.text.Phrase;
 import com.lowagie.text.rtf.RtfBasicElement;
 import com.lowagie.text.rtf.document.RtfDocument;
 
@@ -62,7 +62,7 @@ import com.lowagie.text.rtf.document.RtfDocument;
  * The RtfHeaderFooterGroup holds 0 - 3 RtfHeaderFooters that create a group
  * of headers or footers.
  * 
- * @version $Id$
+ * @version $Id: RtfHeaderFooterGroup.java 3373 2008-05-12 16:21:24Z xlv $
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Thomas Bickel (tmb99@inode.at)
  */

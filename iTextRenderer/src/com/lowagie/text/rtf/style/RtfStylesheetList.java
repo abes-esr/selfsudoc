@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: RtfStylesheetList.java 3580 2008-08-06 15:52:00Z howard_s $
  *
  * Copyright 2001, 2002, 2003, 2004 by Mark Hall
  *
@@ -54,7 +54,7 @@ import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.Iterator;
 
-import com.lowagie.text.DocWriter;
+import com.itextpdf.text.DocWriter;
 import com.lowagie.text.rtf.RtfBasicElement;
 import com.lowagie.text.rtf.RtfElement;
 import com.lowagie.text.rtf.RtfExtendedElement;
@@ -63,7 +63,7 @@ import com.lowagie.text.rtf.document.RtfDocument;
 /**
  * The RtfStylesheetList stores the RtfParagraphStyles that are used in the document.
  * 
- * @version $Id$
+ * @version $Id: RtfStylesheetList.java 3580 2008-08-06 15:52:00Z howard_s $
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Thomas Bickel (tmb99@inode.at)
  */

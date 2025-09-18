@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: RtfDocumentSettings.java 3580 2008-08-06 15:52:00Z howard_s $
  *
  * Copyright 2003, 2004, 2005 by Mark Hall
  *
@@ -49,7 +49,7 @@
 
 package com.lowagie.text.rtf.document;
 
-import com.lowagie.text.DocWriter;
+import com.itextpdf.text.DocWriter;
 import com.lowagie.text.rtf.document.output.RtfDataCache;
 import com.lowagie.text.rtf.style.RtfParagraphStyle;
 
@@ -59,7 +59,7 @@ import com.lowagie.text.rtf.style.RtfParagraphStyle;
  * how the actual document is then generated and some settings may mean that some
  * RTF readers can't read the document or render it wrongly.
  * 
- * @version $Id$
+ * @version $Id: RtfDocumentSettings.java 3580 2008-08-06 15:52:00Z howard_s $
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Thomas Bickel (tmb99@inode.at)
  * @author Howard Shank (hgshank@yahoo.com)

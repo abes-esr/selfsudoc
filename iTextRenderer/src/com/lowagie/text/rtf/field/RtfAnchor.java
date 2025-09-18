@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: RtfAnchor.java 3580 2008-08-06 15:52:00Z howard_s $
  *
  * Copyright 2004 by Mark Hall
  *
@@ -52,8 +52,8 @@ package com.lowagie.text.rtf.field;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.lowagie.text.Anchor;
-import com.lowagie.text.DocWriter;
+import com.itextpdf.text.Anchor;
+import com.itextpdf.text.DocWriter;
 import com.lowagie.text.rtf.document.RtfDocument;
 import com.lowagie.text.rtf.text.RtfPhrase;
 
@@ -61,7 +61,7 @@ import com.lowagie.text.rtf.text.RtfPhrase;
 /**
  * The RtfAnchor is the RTF representation of an Anchor object.
  * 
- * @version $Id$
+ * @version $Id: RtfAnchor.java 3580 2008-08-06 15:52:00Z howard_s $
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Werner Daehn (Werner.Daehn@BusinessObjects.com)
  * @author Thomas Bickel (tmb99@inode.at)

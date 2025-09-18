@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: RtfProtectionSetting.java 3580 2008-08-06 15:52:00Z howard_s $
  *
  * Copyright 2008 by Howard Shank
  *
@@ -52,14 +52,14 @@ package com.lowagie.text.rtf.document;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.lowagie.text.DocWriter;
+import com.itextpdf.text.DocWriter;
 import com.lowagie.text.rtf.RtfElement;
 
 
 /**
  * The RtfProtectionSetting handles document protection elements 
  * 
- * @version $Id$
+ * @version $Id: RtfProtectionSetting.java 3580 2008-08-06 15:52:00Z howard_s $
  * @author Howard Shank (hgshank@yahoo.com)
  * @since 2.1.1 
  */

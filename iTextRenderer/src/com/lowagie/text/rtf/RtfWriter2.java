@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: RtfWriter2.java 3583 2008-08-12 00:00:09Z xlv $
  *
  * Copyright 2001, 2002, 2003, 2004 by Mark Hall
  *
@@ -55,12 +55,12 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.EventListener;
 
-import com.lowagie.text.DocWriter;
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Element;
+import com.itextpdf.text.DocWriter;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Element;
+import com.itextpdf.text.Rectangle;
 import com.lowagie.text.HeaderFooter;
-import com.lowagie.text.Rectangle;
 import com.lowagie.text.rtf.document.RtfDocument;
 import com.lowagie.text.rtf.document.RtfDocumentSettings;
 import com.lowagie.text.rtf.parser.RtfImportMappings;
@@ -70,7 +70,7 @@ import com.lowagie.text.rtf.text.RtfNewPage;
 /**
  * The RtfWriter allows the creation of rtf documents via the iText system
  *
- * Version: $Id$
+ * Version: $Id: RtfWriter2.java 3583 2008-08-12 00:00:09Z xlv $
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  */
 public class RtfWriter2 extends DocWriter {

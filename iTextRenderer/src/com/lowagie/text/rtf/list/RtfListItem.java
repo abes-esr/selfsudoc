@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: RtfListItem.java 3969 2009-06-16 08:03:23Z blowagie $
  *
  * Copyright 2008 by Howard Shank (hgshank@yahoo.com)
  *
@@ -52,8 +52,8 @@ package com.lowagie.text.rtf.list;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.lowagie.text.DocWriter;
-import com.lowagie.text.ListItem;
+import com.itextpdf.text.DocWriter;
+import com.itextpdf.text.ListItem;
 import com.lowagie.text.rtf.RtfBasicElement;
 import com.lowagie.text.rtf.document.RtfDocument;
 import com.lowagie.text.rtf.style.RtfParagraphStyle;
@@ -64,7 +64,7 @@ import com.lowagie.text.rtf.text.RtfParagraph;
 /**
  * The RtfListItem acts as a wrapper for a ListItem.
  * 
- * @version $Id$
+ * @version $Id: RtfListItem.java 3969 2009-06-16 08:03:23Z blowagie $
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Howard Shank (hgshank@yahoo.com)
  * @since 2.1.3

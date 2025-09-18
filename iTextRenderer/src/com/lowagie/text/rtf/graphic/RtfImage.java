@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: RtfImage.java 3580 2008-08-06 15:52:00Z howard_s $
  *
  * Copyright 2001, 2002, 2003, 2004 by Mark Hall
  *
@@ -54,11 +54,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import com.lowagie.text.DocWriter;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Element;
-import com.lowagie.text.Image;
-import com.lowagie.text.pdf.codec.wmf.MetaDo;
+import com.itextpdf.text.DocWriter;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Element;
+import com.itextpdf.text.Image;
+import com.itextpdf.text.pdf.codec.wmf.MetaDo;
 import com.lowagie.text.rtf.RtfElement;
 import com.lowagie.text.rtf.document.RtfDocument;
 import com.lowagie.text.rtf.document.output.RtfByteArrayBuffer;
@@ -68,7 +68,7 @@ import com.lowagie.text.rtf.text.RtfParagraph;
 /**
  * The RtfImage contains one image. Supported image types are jpeg, png, wmf, bmp.
  * 
- * @version $Id$
+ * @version $Id: RtfImage.java 3580 2008-08-06 15:52:00Z howard_s $
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Paulo Soares
  * @author Thomas Bickel (tmb99@inode.at)
@@ -380,7 +380,7 @@ public class RtfImage extends RtfElement {
     }
     
     /**
-     * Sets the alignment of this RtfImage. Uses the alignments from com.lowagie.text.Element.
+     * Sets the alignment of this RtfImage. Uses the alignments from com.itextpdf.text.Element.
      * 
      * @param alignment The alignment to use.
      */
