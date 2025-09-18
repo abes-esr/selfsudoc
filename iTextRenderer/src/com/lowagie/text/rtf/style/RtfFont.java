@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: RtfFont.java 4008 2009-07-07 09:56:52Z blowagie $
  *
  * Copyright 2001, 2002, 2003, 2004 by Mark Hall
  *
@@ -53,8 +53,9 @@ import java.awt.Color;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.lowagie.text.DocWriter;
-import com.lowagie.text.Font;
+import com.itextpdf.text.BaseColor;
+import com.itextpdf.text.DocWriter;
+import com.itextpdf.text.Font;
 import com.lowagie.text.rtf.RtfExtendedElement;
 import com.lowagie.text.rtf.document.RtfDocument;
 
@@ -64,7 +65,7 @@ import com.lowagie.text.rtf.document.RtfDocument;
  * BaseFont fontname handling contributed by Craig Fleming. Various fixes
  * Renaud Michel, Werner Daehn.
  *
- * Version: $Id$
+ * Version: $Id: RtfFont.java 4008 2009-07-07 09:56:52Z blowagie $
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Craig Fleming (rythos@rhana.dhs.org)
  * @author Renaud Michel (r.michel@immedia.be)
@@ -213,7 +214,7 @@ public class RtfFont extends Font implements RtfExtendedElement {
      * @param fontName The font name to use
      */
     public RtfFont(String fontName) {
-        super(Font.UNDEFINED, Font.UNDEFINED, Font.UNDEFINED, null);
+        super(FontFamily.UNDEFINED, Font.UNDEFINED, Font.UNDEFINED, null);
         this.fontName = fontName;
     }
     
@@ -225,7 +226,7 @@ public class RtfFont extends Font implements RtfExtendedElement {
      * @param size The font size to use
      */
     public RtfFont(String fontName, float size) {
-        super(Font.UNDEFINED, size, Font.UNDEFINED, null);
+        super(FontFamily.UNDEFINED, size, Font.UNDEFINED, null);
         this.fontName = fontName;
     }
     
@@ -238,7 +239,7 @@ public class RtfFont extends Font implements RtfExtendedElement {
      * @param style The font style to use
      */
     public RtfFont(String fontName, float size, int style) {
-        super(Font.UNDEFINED, size, style, null);
+        super(FontFamily.UNDEFINED, size, style, null);
         this.fontName = fontName;
     }
     
@@ -252,7 +253,7 @@ public class RtfFont extends Font implements RtfExtendedElement {
      * @param color The font color to use
      */
     public RtfFont(String fontName, float size, int style, Color color) {
-        super(Font.UNDEFINED, size, style, color);
+        super(FontFamily.UNDEFINED, size, style, new BaseColor(color));
         this.fontName = fontName;
     }
     
@@ -270,6 +271,12 @@ public class RtfFont extends Font implements RtfExtendedElement {
         this(fontName, size, style, color);
         this.charset = charset;
     }
+    
+    public RtfFont(String fontName, float size, int style, BaseColor color, int charset) {
+    	super(FontFamily.UNDEFINED, size, style, color);
+        this.fontName = fontName;
+        this.charset = charset;
+    }
 
     /**
      * Special constructor for the default font
@@ -284,7 +291,7 @@ public class RtfFont extends Font implements RtfExtendedElement {
     }
 
     /**
-     * Constructs a RtfFont from a com.lowagie.text.Font
+     * Constructs a RtfFont from a com.itextpdf.text.Font
      * @param doc The RtfDocument this font appears in
      * @param font The Font to use as a base
      */
@@ -500,14 +507,14 @@ public class RtfFont extends Font implements RtfExtendedElement {
     }
     
     /**
-     * @see com.lowagie.text.Font#getFamilyname()
+     * @see com.itextpdf.text.Font#getFamilyname()
      */
     public String getFamilyname() {
         return this.fontName;
     }
     
     /**
-     * @see com.lowagie.text.Font#setFamily(String)
+     * @see com.itextpdf.text.Font#setFamily(String)
      */
     public void setFamily(String family){
         super.setFamily(family);
@@ -520,21 +527,21 @@ public class RtfFont extends Font implements RtfExtendedElement {
      * @param familyname The family name to set the name to.
      */
     private void setToDefaultFamily(String familyname){
-        switch (Font.getFamilyIndex(familyname)) {
-            case Font.COURIER:
+        switch (Font.getFamily(familyname)) {
+            case COURIER:
                 this.fontName = "Courier";
                 break;
-            case Font.HELVETICA:
+            case HELVETICA:
                 this.fontName = "Arial";
                 break;
-            case Font.SYMBOL:
+            case SYMBOL:
                 this.fontName = "Symbol";
                 this.charset = 2;
                 break;
-            case Font.TIMES_ROMAN:
+            case TIMES_ROMAN:
                 this.fontName = "Times New Roman";
                 break;
-            case Font.ZAPFDINGBATS:
+            case ZAPFDINGBATS:
                 this.fontName = "Windings";
                 break;
             default:
@@ -552,7 +559,7 @@ public class RtfFont extends Font implements RtfExtendedElement {
     }
     
     /**
-     * @see com.lowagie.text.Font#setSize(float)
+     * @see com.itextpdf.text.Font#setSize(float)
      */
     public void setSize(float size){
         super.setSize(size);
@@ -569,7 +576,7 @@ public class RtfFont extends Font implements RtfExtendedElement {
     }
     
     /**
-     * @see com.lowagie.text.Font#setStyle(int)
+     * @see com.itextpdf.text.Font#setStyle(int)
      */
     public void setStyle(int style){
         super.setStyle(style);
@@ -577,7 +584,7 @@ public class RtfFont extends Font implements RtfExtendedElement {
     }
     
     /**
-     * @see com.lowagie.text.Font#setStyle(String)
+     * @see com.itextpdf.text.Font#setStyle(String)
      */
     public void setStyle(String style) {
         super.setStyle(style);
@@ -641,10 +648,10 @@ public class RtfFont extends Font implements RtfExtendedElement {
     }
     
     /**
-     * @see com.lowagie.text.Font#setColor(Color)
+     * @see com.itextpdf.text.Font#setColor(Color)
      */
     public void setColor(Color color) {
-        super.setColor(color);
+        super.setColor(new BaseColor(color));
         if(color != null) {
             this.color = new RtfColor(document, color);
         } else {
@@ -653,7 +660,7 @@ public class RtfFont extends Font implements RtfExtendedElement {
     }
     
     /**
-     * @see com.lowagie.text.Font#setColor(int, int, int)
+     * @see com.itextpdf.text.Font#setColor(int, int, int)
      */
     public void setColor(int red, int green, int blue) {
         super.setColor(red,green,blue);
@@ -698,7 +705,7 @@ public class RtfFont extends Font implements RtfExtendedElement {
             dStyle = font.getStyle();
         }
 
-        Color dColor = font.getColor();
+        BaseColor dColor = font.getColor();
         if(dColor == null) {
             dColor = this.getColor();
         }
@@ -721,12 +728,12 @@ public class RtfFont extends Font implements RtfExtendedElement {
     }
     
     /**
-     * Compares this <code>RtfFont</code> to either a {@link com.lowagie.text.Font} or
+     * Compares this <code>RtfFont</code> to either a {@link com.itextpdf.text.Font} or
      * an <code>RtfFont</code>.
      * 
      * @since 2.1.0
      */
-    public int compareTo(Object object) {
+    public int compareTo(Font object) {
         if (object == null) {
             return -1;
         }

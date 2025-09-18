@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: RtfDestinationDocument.java 3456 2008-05-26 15:26:57Z howard_s $
  *
  * Copyright 2007 by Howard Shank (hgshank@yahoo.com)
  *
@@ -53,14 +53,15 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.Document;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Font;
-import com.lowagie.text.FontFactory;
-import com.lowagie.text.Paragraph;
+import com.itextpdf.text.BaseColor;
+import com.itextpdf.text.Chunk;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Font;
+import com.itextpdf.text.FontFactory;
+import com.itextpdf.text.Paragraph;
 import com.lowagie.text.rtf.direct.RtfDirectContent;
-import com.lowagie.text.rtf.document.*;
+import com.lowagie.text.rtf.document.RtfDocument;
 import com.lowagie.text.rtf.parser.RtfParser;
 import com.lowagie.text.rtf.parser.ctrlwords.RtfCtrlWordData;
 import com.lowagie.text.rtf.parser.ctrlwords.RtfCtrlWordType;
@@ -85,7 +86,7 @@ public final class RtfDestinationDocument extends RtfDestination implements RtfP
 	/**
 	 * The iText Document object.
 	 * 
-	 * @see com.lowagie.text.Document
+	 * @see com.itextpdf.text.Document
 	 */
 	private Document doc = null;
 	
@@ -578,7 +579,7 @@ public final class RtfDestinationDocument extends RtfDestination implements RtfP
 			if(charProperties.containsKey(RtfProperty.CHARACTER_BOLD)) fs |= Font.BOLD; 
 			if(charProperties.containsKey(RtfProperty.CHARACTER_ITALIC)) fs |= Font.ITALIC;
 			if(charProperties.containsKey(RtfProperty.CHARACTER_UNDERLINE)) fs |= Font.UNDERLINE;
-			Font useFont = FontFactory.getFont(currFont.getFamilyname(), 12, fs, new Color(0,0,0));
+			Font useFont = FontFactory.getFont(currFont.getFamilyname(), 12, fs, new BaseColor(new Color(0,0,0)));
 			
 			
 			chunk.setFont(useFont);

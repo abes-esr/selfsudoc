@@ -52,7 +52,7 @@ package com.lowagie.text.rtf;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.lowagie.text.DocWriter;
+import com.itextpdf.text.DocWriter;
 import com.lowagie.text.rtf.document.RtfDocument;
 
 /**

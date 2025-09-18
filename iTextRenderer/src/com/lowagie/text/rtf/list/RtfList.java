@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: RtfList.java 4006 2009-07-07 08:34:10Z blowagie $
  *
  * Copyright 2008 Howard Shank (hgshank@yahoo.com)
  *
@@ -55,16 +55,18 @@ import java.io.OutputStream;
 import java.security.InvalidParameterException;
 import java.util.ArrayList;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.DocWriter;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Element;
-import com.lowagie.text.Font;
-import com.lowagie.text.List;
-import com.lowagie.text.ListItem;
-import com.lowagie.text.RomanList;
-import com.lowagie.text.factories.RomanAlphabetFactory;
-import com.lowagie.text.factories.RomanNumberFactory;
+import com.itextpdf.text.BaseColor;
+import com.itextpdf.text.Chunk;
+import com.itextpdf.text.DocWriter;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Element;
+import com.itextpdf.text.Font;
+import com.itextpdf.text.List;
+import com.itextpdf.text.ListItem;
+import com.itextpdf.text.RomanList;
+import com.itextpdf.text.Font.FontFamily;
+import com.itextpdf.text.factories.RomanAlphabetFactory;
+import com.itextpdf.text.factories.RomanNumberFactory;
 import com.lowagie.text.rtf.RtfBasicElement;
 import com.lowagie.text.rtf.RtfElement;
 import com.lowagie.text.rtf.RtfExtendedElement;
@@ -78,7 +80,7 @@ import com.lowagie.text.rtf.text.RtfParagraph;
  * The RtfList stores one List. It also provides the methods to write the
  * list declaration and the list data.
  *  
- * @version $Id$
+ * @version $Id: RtfList.java 4006 2009-07-07 08:34:10Z blowagie $
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Howard Shank (hgshank@yahoo.com)
  * @since 2.1.3
@@ -332,7 +334,7 @@ public class RtfList extends RtfElement implements RtfExtendedElement {
                     } else if(rtfElement instanceof RtfListItem) {
                         ((RtfListItem) rtfElement).setParent(ll);
                     }
-                    ll.setFontNumber( new RtfFont(document, new Font(Font.TIMES_ROMAN, 10, Font.NORMAL, new Color(0, 0, 0))) );
+                    ll.setFontNumber( new RtfFont(document, new Font(FontFamily.TIMES_ROMAN, 10, Font.NORMAL, new BaseColor(new Color(0, 0, 0)))) );
                     if (list.getSymbol() != null && list.getSymbol().getFont() != null && !list.getSymbol().getContent().startsWith("-") && list.getSymbol().getContent().length() > 0) {
                         // only set this to bullet symbol is not default
                         ll.setBulletFont( list.getSymbol().getFont());
@@ -342,7 +344,7 @@ public class RtfList extends RtfElement implements RtfExtendedElement {
                      	ll.setBulletFont(list.getSymbol().getFont());
                 	 
                 	 } else {
-                    	ll.setBulletFont(new Font(Font.SYMBOL, 10, Font.NORMAL, new Color(0, 0, 0)));
+                    	ll.setBulletFont(new Font(FontFamily.SYMBOL, 10, Font.NORMAL, new BaseColor(new Color(0, 0, 0))));
                     } 
                     items.add(rtfElement);
                 }

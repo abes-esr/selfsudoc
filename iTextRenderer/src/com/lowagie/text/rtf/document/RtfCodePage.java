@@ -51,7 +51,7 @@ package com.lowagie.text.rtf.document;
 
 import java.io.IOException;
 import java.io.OutputStream;
-import com.lowagie.text.DocWriter;
+import com.itextpdf.text.DocWriter;
 import com.lowagie.text.rtf.RtfElement;
 import com.lowagie.text.rtf.RtfExtendedElement;
 

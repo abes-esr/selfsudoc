@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: RtfPictureList.java 3580 2008-08-06 15:52:00Z howard_s $
  *
  * Copyright 2008 Howard Shank (hgshank@yahoo.com)
  *
@@ -52,7 +52,7 @@ package com.lowagie.text.rtf.list;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.lowagie.text.DocWriter;
+import com.itextpdf.text.DocWriter;
 import com.lowagie.text.rtf.RtfElement;
 import com.lowagie.text.rtf.RtfExtendedElement;
 import com.lowagie.text.rtf.document.RtfDocument;
@@ -61,7 +61,7 @@ import com.lowagie.text.rtf.document.RtfDocument;
 /**
  * The RtfPictureList2 manages the pictures for lists.
  * 
- * @version $Id$
+ * @version $Id: RtfPictureList.java 3580 2008-08-06 15:52:00Z howard_s $
  * @author Howard Shank (hgshank@yahoo.com)
  * @since 2.1.3
  */

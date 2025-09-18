@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: Row.java 3373 2008-05-12 16:21:24Z xlv $
  *
  * Copyright 1999, 2000, 2001, 2002 by Bruno Lowagie.
  *
@@ -50,6 +50,10 @@
 package com.lowagie.text;
 
 import java.util.ArrayList;
+
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Element;
+import com.itextpdf.text.ElementListener;
 
 /**
  * A <CODE>Row</CODE> is part of a <CODE>Table</CODE>
@@ -134,7 +138,7 @@ public class Row implements Element {
      * @return  a type
      */
     public int type() {
-        return Element.ROW;
+        return com.lowagie.text.Element.ROW;
     }
     
     /**

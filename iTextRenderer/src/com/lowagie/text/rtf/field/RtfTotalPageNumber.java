@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: RtfTotalPageNumber.java 3580 2008-08-06 15:52:00Z howard_s $
  *
  * Copyright 2005 Jose Hurtado <a href="mailto:jose.hurtado@gft.com">jose.hurtado@gft.com</a>
  * Parts Copyright 2005 Mark Hall
@@ -53,14 +53,14 @@ package com.lowagie.text.rtf.field;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.lowagie.text.DocWriter;
-import com.lowagie.text.Font;
+import com.itextpdf.text.DocWriter;
+import com.itextpdf.text.Font;
 import com.lowagie.text.rtf.document.RtfDocument;
 
 /**
  * The RtfTotalPageNumber provides the total number of pages field in rtf documents.
  * 
- * @version $Id$
+ * @version $Id: RtfTotalPageNumber.java 3580 2008-08-06 15:52:00Z howard_s $
  * @author Jose Hurtado (jose.hurtado@gft.com)
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Thomas Bickel (tmb99@inode.at)

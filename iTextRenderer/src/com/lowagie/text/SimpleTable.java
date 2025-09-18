@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: SimpleTable.java 3752 2009-03-04 18:02:40Z blowagie $
  *
  * Copyright 2005 by Bruno Lowagie.
  *
@@ -51,9 +51,15 @@ package com.lowagie.text;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import com.lowagie.text.pdf.PdfContentByte;
-import com.lowagie.text.pdf.PdfPTable;
-import com.lowagie.text.pdf.PdfPTableEvent;
+import com.itextpdf.text.BadElementException;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Element;
+import com.itextpdf.text.ExceptionConverter;
+import com.itextpdf.text.Rectangle;
+import com.itextpdf.text.TextElementArray;
+import com.itextpdf.text.pdf.PdfContentByte;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfPTableEvent;
 
 /**
  * Rectangle that can be used for Cells.
@@ -168,7 +174,7 @@ public class SimpleTable extends Rectangle implements PdfPTableEvent, TextElemen
 	
 	/**
 	 * Creates a PdfPTable object based on this TableAttributes object.
-	 * @return a com.lowagie.text.pdf.PdfPTable object
+	 * @return a com.itextpdf.text.pdf.PdfPTable object
 	 * @throws DocumentException
 	 */
 	public PdfPTable createPdfPTable() throws DocumentException {
@@ -246,7 +252,7 @@ public class SimpleTable extends Rectangle implements PdfPTableEvent, TextElemen
 	}
 	
 	/**
-     * @see com.lowagie.text.pdf.PdfPTableEvent#tableLayout(com.lowagie.text.pdf.PdfPTable, float[][], float[], int, int, com.lowagie.text.pdf.PdfContentByte[])
+     * @see com.itextpdf.text.pdf.PdfPTableEvent#tableLayout(com.itextpdf.text.pdf.PdfPTable, float[][], float[], int, int, com.itextpdf.text.pdf.PdfContentByte[])
  	 */
 	public void tableLayout(PdfPTable table, float[][] widths, float[] heights, int headerRows, int rowStart, PdfContentByte[] canvases) {
 		float[] width = widths[0];
@@ -325,7 +331,7 @@ public class SimpleTable extends Rectangle implements PdfPTableEvent, TextElemen
 	 * @see com.lowagie.text.Element#type()
 	 */
 	public int type() {
-		return Element.TABLE;
+		return com.lowagie.text.Element.TABLE;
 	}
 
 	/**
@@ -337,7 +343,7 @@ public class SimpleTable extends Rectangle implements PdfPTableEvent, TextElemen
 	}
 
 	/**
-	 * @see com.lowagie.text.TextElementArray#add(java.lang.Object)
+	 * @see com.itextpdf.text.TextElementArray#add(java.lang.Object)
 	 */
 	public boolean add(Object o) {
 		try {
@@ -351,4 +357,9 @@ public class SimpleTable extends Rectangle implements PdfPTableEvent, TextElemen
 			throw new ExceptionConverter(e);
 		}
 	}
+	
+	public boolean add(Element paramElement) {
+		return add(paramElement);
+	}
+
 }

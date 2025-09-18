@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: RtfRow.java 3735 2009-02-26 01:44:03Z xlv $
  *
  * Copyright 2001, 2002, 2003, 2004, 2005 by Mark Hall
  *
@@ -53,12 +53,12 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.ArrayList;
 
+import com.itextpdf.text.DocWriter;
+import com.itextpdf.text.Element;
+import com.itextpdf.text.pdf.PdfPCell;
+import com.itextpdf.text.pdf.PdfPRow;
 import com.lowagie.text.Cell;
-import com.lowagie.text.DocWriter;
-import com.lowagie.text.Element;
 import com.lowagie.text.Row;
-import com.lowagie.text.pdf.PdfPCell;
-import com.lowagie.text.pdf.PdfPRow;
 import com.lowagie.text.rtf.RtfElement;
 import com.lowagie.text.rtf.document.RtfDocument;
 
@@ -67,7 +67,7 @@ import com.lowagie.text.rtf.document.RtfDocument;
  * The RtfRow wraps one Row for a RtfTable.
  * INTERNAL USE ONLY
  * 
- * @version $Id$
+ * @version $Id: RtfRow.java 3735 2009-02-26 01:44:03Z xlv $
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Steffen Stundzig
  * @author Lorenz Maierhofer

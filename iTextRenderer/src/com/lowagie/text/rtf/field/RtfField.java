@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: RtfField.java 3580 2008-08-06 15:52:00Z howard_s $
  *
  * Copyright 2004 by Mark Hall
  * Uses code Copyright 2002
@@ -55,9 +55,9 @@ package com.lowagie.text.rtf.field;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.DocWriter;
-import com.lowagie.text.Font;
+import com.itextpdf.text.Chunk;
+import com.itextpdf.text.DocWriter;
+import com.itextpdf.text.Font;
 import com.lowagie.text.rtf.RtfBasicElement;
 import com.lowagie.text.rtf.document.RtfDocument;
 import com.lowagie.text.rtf.style.RtfFont;
@@ -69,7 +69,7 @@ import com.lowagie.text.rtf.style.RtfFont;
  * and writeFieldResultContent. All other field functionality is handled by the
  * RtfField class.
  * 
- * @version $Id$
+ * @version $Id: RtfField.java 3580 2008-08-06 15:52:00Z howard_s $
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Dirk Weigenand (Dirk.Weigenand@smb-tec.com)
  * @author Thomas Bickel (tmb99@inode.at)

@@ -1,5 +1,5 @@
 /*
- * $Id$
+ * $Id: RtfSection.java 3373 2008-05-12 16:21:24Z xlv $
  *
  * Copyright 2001, 2002, 2003, 2004 by Mark Hall
  *
@@ -54,10 +54,10 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import com.lowagie.text.Chunk;
-import com.lowagie.text.DocumentException;
-import com.lowagie.text.Element;
-import com.lowagie.text.Section;
+import com.itextpdf.text.Chunk;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Element;
+import com.itextpdf.text.Section;
 import com.lowagie.text.rtf.RtfBasicElement;
 import com.lowagie.text.rtf.RtfElement;
 import com.lowagie.text.rtf.document.RtfDocument;
@@ -68,7 +68,7 @@ import com.lowagie.text.rtf.field.RtfTOCEntry;
  * The RtfSection wraps a Section element.
  * INTERNAL CLASS
  * 
- * @version $Id$
+ * @version $Id: RtfSection.java 3373 2008-05-12 16:21:24Z xlv $
  * @author Mark Hall (Mark.Hall@mail.room3b.eu)
  * @author Thomas Bickel (tmb99@inode.at)
  */
