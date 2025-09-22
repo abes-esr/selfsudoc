@@ -6,6 +6,7 @@
     <packaging>pom</packaging>
     <description>SELFSudoc batch et servlet</description>
     <modules>
+        <module>Utils</module>
         <module>iText-src-5.0.2</module>
         <module>iTextRenderer</module>
     </modules>
