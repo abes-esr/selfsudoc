@@ -7,5 +7,6 @@
     <description>SELFSudoc batch et servlet</description>
     <modules>
         <module>iText-src-5.0.2</module>
+        <module>iTextRenderer</module>
     </modules>
 </project>
