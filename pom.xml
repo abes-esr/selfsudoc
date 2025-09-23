@@ -9,6 +9,7 @@
         <module>Utils</module>
         <module>iText-src-5.0.2</module>
         <module>iTextRenderer</module>
+        <module>Technic</module>
     </modules>
 
     <distributionManagement>
