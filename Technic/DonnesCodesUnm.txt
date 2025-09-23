@@ -1,42 +1,42 @@
 000$c	a	Analytique
-000$c	s	Publication en série
-000$a	c	Notice corrigée
-000$a	d	Notice détruite
-000$a	n	Notice nouvelle ou pré-notice
-000$a	o	Notice lié à un niveau supérieur
-000$a	p	Remplace pré-notice
-000$b	a	Imprimé
+000$c	s	Publication en sÃ©rie
+000$a	c	Notice corrigÃ©e
+000$a	d	Notice dÃ©truite
+000$a	n	Notice nouvelle ou prÃ©-notice
+000$a	o	Notice liÃ© Ã  un niveau supÃ©rieur
+000$a	p	Remplace prÃ©-notice
+000$b	a	ImprimÃ©
 000$b	b	Manuscrit
-000$b	c	Musique imprimé
+000$b	c	Musique imprimÃ©
 000$b	d	Musique manuscrite
-000$b	e	Carte imprimé
+000$b	e	Carte imprimÃ©
 000$b	f	Carte manuscrite
-000$b	g	Matériel video
-000$b	i	Sons enregistrés
-000$b	j	Musique enregistrée
+000$b	g	MatÃ©riel video
+000$b	i	Sons enregistrÃ©s
+000$b	j	Musique enregistrÃ©e
 000$b	k	Graphique dessins
 000$b	l	Support informatique
-000$b	m	Multimédia
+000$b	m	MultimÃ©dia
 000$b	r	3D Artefact
 000$c	m	Monographie
 000$c	c	Collection
-000$d	#	Relation indéfinie
-000$d	0	Pas de relation hiérachique
+000$d	#	Relation indÃ©finie
+000$d	0	Pas de relation hiÃ©rachique
 000$d	1	Niveau le plus haut
-000$d	2	Niveau inférieur
-000$i	1	Notice non vérifié
-000$i	2	Notice en prépublication
-000$i	3	Notice trés incomplète
+000$d	2	Niveau infÃ©rieur
+000$i	1	Notice non vÃ©rifiÃ©
+000$i	2	Notice en prÃ©publication
+000$i	3	Notice trÃ©s incomplÃ¨te
 000$j	#	(blanc) = Pure ISBD
 000$j	i	ISBD partiel ou incomplet
 000$j	n	Non ISBD
-008$a	Aa	Monographie imprimée
-008$a	Ab	Périodique imprimé
-008$a	Ad	Publication en série imprimée
-008$a	Ar	Recueil factice d'imprimés
-008$a	As	Partie composante d'imprimé
+008$a	Aa	Monographie imprimÃ©e
+008$a	Ab	PÃ©riodique imprimÃ©
+008$a	Ad	Publication en sÃ©rie imprimÃ©e
+008$a	Ar	Recueil factice d'imprimÃ©s
+008$a	As	Partie composante d'imprimÃ©
 008$a	Ba	Document audiovisuel
-008$a	Bb	Périodique sous forme de documents audiovisuels
+008$a	Bb	PÃ©riodique sous forme de documents audiovisuels
 008$a	Bd	Collection de documents audiovisuels
 008$a	Br	Recueil factice de documents audiovisuels
 008$a	Bs	Extrait de document audiovisuel
@@ -44,25 +44,25 @@
 008$a	Ga	Enregistrement sonore musical
 008$a	Gb	Collection d'enregistrements sonores musicaux
 008$a	Ia	Document(s) en deux dimensions
-008$a	Ka	Carte imprimée
-008$a	Kb	Collection de cartes imprimées
+008$a	Ka	Carte imprimÃ©e
+008$a	Kb	Collection de cartes imprimÃ©es
 008$a	La	Partition manuscrite
-008$a	Ma	Partition imprimée
-008$a	Mb	Collection de partitions imprimées
+008$a	Ma	Partition imprimÃ©e
+008$a	Mb	Collection de partitions imprimÃ©es
 008$a	Na	Enregistrement sonore
-008$a	Nb	Périodique sous forme d'enregistrements sonores
+008$a	Nb	PÃ©riodique sous forme d'enregistrements sonores
 008$a	Nd	Collection d'enregistrements sonores
-008$a	Oa	Document électronique
-008$a	Ob	Périodique électronique
-008$a	Od	Collection de documents électroniques
-008$a	On	Partie de document électronique
-008$a	Ox	Document électronique
-008$a	Oy	Document électronique
+008$a	Oa	Document Ã©lectronique
+008$a	Ob	PÃ©riodique Ã©lectronique
+008$a	Od	Collection de documents Ã©lectroniques
+008$a	On	Partie de document Ã©lectronique
+008$a	Ox	Document Ã©lectronique
+008$a	Oy	Document Ã©lectronique
 008$a	Pa	Carte manuscrite
 008$a	Va	Objet
-008$a	Za	Document multimédia
-008$a	Zb	Collection de documents multimédias
-008$a	Zr	Recueil factice de documents multimédias
+008$a	Za	Document multimÃ©dia
+008$a	Zb	Collection de documents multimÃ©dias
+008$a	Zr	Recueil factice de documents multimÃ©dias
 101$a	ace	achinese
 101$a	ach	acoli
 101$a	ada	adan
@@ -78,7 +78,7 @@
 101$a	ger	allemand
 101$a	gmh	allemand (moyen haut)
 101$a	goh	allemand (vieux haut)
-101$a	nai	amérindien
+101$a	nai	amÃ©rindien
 101$a	amh	amharique
 101$a	eng	anglais
 101$a	enm	anglais (moyen)
@@ -116,7 +116,7 @@
 101$a	bik	bikol
 101$a	bin	bini
 101$a	bur	birman
-101$a	bla	blackfoot(= pied noir d'Amérique
+101$a	bla	blackfoot(= pied noir d'AmÃ©rique
 101$a	bra	braj
 101$a	bre	breton
 101$a	bug	bugi
@@ -142,7 +142,7 @@
 101$a	cre	cree
 101$a	cpe	creoles et pidgins (anglais)
 101$a	crp	creoles et pidgins (diverses)
-101$a	cpf	creoles et pidgins (français)
+101$a	cpf	creoles et pidgins (franÃ§ais)
 101$a	cpp	creoles et pidgins (portugais)
 101$a	dak	dakota
 101$a	dan	danois
@@ -172,9 +172,9 @@
 101$a	fiu	finno-ougrien
 101$a	fin	finnois
 101$a	fon	fon
-101$a	fre	français
-101$a	fro	français (ancien)
-101$a	frm	français (moyen)
+101$a	fre	franÃ§ais
+101$a	fro	franÃ§ais (ancien)
+101$a	frm	franÃ§ais (moyen)
 101$a	fri	frison
 101$a	ful	fula
 101$a	gaa	ga
@@ -337,7 +337,7 @@
 101$a	pon	ponape
 101$a	por	portugais
 101$a	pra	prakrit
-101$a	pro	provençal (avant 1500)
+101$a	pro	provenÃ§al (avant 1500)
 101$a	que	quechua
 101$a	raj	rajasthani
 101$a	rar	rarotonga
@@ -363,10 +363,10 @@
 101$a	sid	sidamo
 101$a	snd	sindhi
 101$a	snh	singhalais
-101$a	sit	sino-tibétaines (langues)
+101$a	sit	sino-tibÃ©taines (langues)
 101$a	sio	siou (famille)
 101$a	sla	slaves (diverses)
-101$a	chu	slavon d'église
+101$a	chu	slavon d'Ã©glise
 101$a	slo	slovaque
 101$a	slv	slovene
 101$a	sog	sogdien
@@ -407,7 +407,7 @@
 101$a	tsw	tswana
 101$a	tum	tumbuka
 101$a	tur	turc
-101$a	ota	turc ottoman (écriture arabe)
+101$a	ota	turc ottoman (Ã©criture arabe)
 101$a	tut	turco-tatar
 101$a	tuk	turkmene
 101$a	twi	twi
@@ -436,298 +436,298 @@
 102$a	AF	en Afghanistan
 102$a	ZA	en Afrique du Sud
 102$a	AL	en Albanie
-102$a	DZ	en Algérie
+102$a	DZ	en AlgÃ©rie
 102$a	DE	en Allemagne
 102$a	AD	en Andorre
 102$a	AO	en Angola
 102$a	AI	en Anguilla
 102$a	AQ	en Antarctique
 102$a	AG	en Antigua et Barbuda
-102$a	AN	aux Antilles néerlandaises
+102$a	AN	aux Antilles nÃ©erlandaises
 102$a	SA	en Arabie Saoudite
 102$a	AR	en Argentine
-102$a	AM	en Arménie
+102$a	AM	en ArmÃ©nie
 102$a	AW	en Aruba
 102$a	AU	en Australie
 102$a	AT	en Autriche
-102$a	AZ	en Azerbaïdjan
+102$a	AZ	en AzerbaÃ¯djan
 102$a	BS	aux Bahamas
-102$a	BH	à Bahrein
+102$a	BH	Ã  Bahrein
 102$a	BD	au Bangladesh
 102$a	BB	en Barbade
-102$a	BY	en Bélarus
+102$a	BY	en BÃ©larus
 102$a	BE	en Belgique
-102$a	BZ	à Bélize
-102$a	BJ	au Bénin
+102$a	BZ	Ã  BÃ©lize
+102$a	BJ	au BÃ©nin
 102$a	BM	aux Bermudes
 102$a	BT	au Bhoutan
 102$a	BO	en Bolivie
-102$a	BA	en Bosnie herzégovine
+102$a	BA	en Bosnie herzÃ©govine
 102$a	BW	au Botswana
 102$a	BV	dans l'Ile Bouvet
-102$a	BR	au Brésil
+102$a	BR	au BrÃ©sil
 102$a	BN	au Brunei Darussalam
 102$a	BG	en Bulgarie
 102$a	BF	au Burkina Faso
 102$a	BI	au Burundi
-102$a	KY	aux Iles Caïmanes
+102$a	KY	aux Iles CaÃ¯manes
 102$a	KH	au Cambodge
 102$a	CM	au Cameroun
 102$a	CA	au Canada
 102$a	CV	au Cap-Vert
-102$a	CF	en République Centrafricaine
+102$a	CF	en RÃ©publique Centrafricaine
 102$a	CL	au Chili
 102$a	CN	en Chine
-102$a	CX	à l'Ile Christmas
-102$a	CY	à Chypre
+102$a	CX	Ã  l'Ile Christmas
+102$a	CY	Ã  Chypre
 102$a	CC	aux Iles Cocos (Keeling)
 102$a	CO	en Colombie
 102$a	KM	aux Comores
 102$a	CG	au Congo
 102$a	CK	aux Iles Cook
-102$a	KR	en République de Corée
-102$a	KP	en République populaire démocratique de Corée
+102$a	KR	en RÃ©publique de CorÃ©e
+102$a	KP	en RÃ©publique populaire dÃ©mocratique de CorÃ©e
 102$a	CR	au Costa Rica
-102$a	CI	en Côte d'Ivoire
+102$a	CI	en CÃ´te d'Ivoire
 102$a	HR	en Croatie
-102$a	CU	à Cuba
+102$a	CU	Ã  Cuba
 102$a	DK	au Danemark
-102$a	DJ	à Djibouti
-102$a	DO	en République Dominicaine
+102$a	DJ	Ã  Djibouti
+102$a	DO	en RÃ©publique Dominicaine
 102$a	DM	en Dominique
 102$a	EG	en Egypte
 102$a	SV	au Salvador
 102$a	AE	aux Emirats arabes unis
 102$a	EC	en Equateur
-102$a	ER	en Erythrée
+102$a	ER	en ErythrÃ©e
 102$a	ES	en Espagne
 102$a	EE	en Estonie
 102$a	US	aux Etats-Unis
 102$a	ET	en Ethiopie
 102$a	FK	aux Iles Falkland (Malvinas)
 102$a	FO	aux Iles Feroe
-102$a	FJ	à Fidji
+102$a	FJ	Ã  Fidji
 102$a	FI	en Finlande
 102$a	FR	en France
 102$a	GA	au Gabon
 102$a	GM	en Gambie
-102$a	GE	en Géorgie
-102$a	GS	en Géorgie du sud et aux iles sandwich du sud
+102$a	GE	en GÃ©orgie
+102$a	GS	en GÃ©orgie du sud et aux iles sandwich du sud
 102$a	GH	au Ghana
-102$a	GI	à Gibraltar
-102$a	GR	en Grèce
-102$a	GD	à Grenade
+102$a	GI	Ã  Gibraltar
+102$a	GR	en GrÃ¨ce
+102$a	GD	Ã  Grenade
 102$a	GL	au Groenland
 102$a	GP	en Guadeloupe
-102$a	GU	à Guam
+102$a	GU	Ã  Guam
 102$a	GT	au Guatemala
-102$a	GN	en Guinée
-102$a	GW	en Guinée-Bissau
-102$a	GQ	en Guinée équatoriale
+102$a	GN	en GuinÃ©e
+102$a	GW	en GuinÃ©e-Bissau
+102$a	GQ	en GuinÃ©e Ã©quatoriale
 102$a	GY	au Guyana
-102$a	GF	en Guyane française
-102$a	HT	à Haïti
-102$a	HM	à l'Ile Heard et aux Iles McDonald
+102$a	GF	en Guyane franÃ§aise
+102$a	HT	Ã  HaÃ¯ti
+102$a	HM	Ã  l'Ile Heard et aux Iles McDonald
 102$a	HN	au Honduras
-102$a	HK	à Hong-Kong
+102$a	HK	Ã  Hong-Kong
 102$a	HU	en Hongrie
-102$a	UM	aux Iles mineures éloignées des Etats-Unis
+102$a	UM	aux Iles mineures Ã©loignÃ©es des Etats-Unis
 102$a	VG	aux Iles vierges britanniques
 102$a	VI	aux Iles vierges des Etats-Unis
 102$a	XX	en pays inconnu
 102$a	IN	en Inde
-102$a	ID	en Indonésie
-102$a	IR	en République islamique d'Iran
+102$a	ID	en IndonÃ©sie
+102$a	IR	en RÃ©publique islamique d'Iran
 102$a	IQ	en Irak
 102$a	IE	en Irlande
 102$a	IS	en Islande
-102$a	IL	en Israël
+102$a	IL	en IsraÃ«l
 102$a	IT	en Italie
-102$a	JM	en Jamaïque
+102$a	JM	en JamaÃ¯que
 102$a	JP	au Japon
 102$a	JO	en Jordanie
 102$a	KZ	au Kazakhstan
 102$a	KE	au Kenya
 102$a	KG	au Kirghizistan
 102$a	KI	au Kiribati
-102$a	KW	au Koweït
-102$a	LA	en République démocratique populaire Lao
+102$a	KW	au KoweÃ¯t
+102$a	LA	en RÃ©publique dÃ©mocratique populaire Lao
 102$a	LS	au Lesotho
 102$a	LV	en Lettonie
 102$a	LB	au Liban
-102$a	LR	au Libéria
+102$a	LR	au LibÃ©ria
 102$a	LY	en Jamahiriya arabe Lybienne
 102$a	LI	au Liechtenstein
 102$a	LT	en Lituanie
 102$a	LU	au Luxembourg
-102$a	MO	à Macao
-102$a	MK	dans l'ex-République yougoslave de Macédoine
-102$a	MG	à Madagascar
+102$a	MO	Ã  Macao
+102$a	MK	dans l'ex-RÃ©publique yougoslave de MacÃ©doine
+102$a	MG	Ã  Madagascar
 102$a	MY	en Malaisie
 102$a	MW	au Malawi
 102$a	MV	aux Maldives
 102$a	ML	au Mali
-102$a	MT	à Malte
+102$a	MT	Ã  Malte
 102$a	MP	aux Iles Mariannes du nord
 102$a	MA	au Maroc
 102$a	MH	aux Iles Marshall
 102$a	MQ	en Martinique
-102$a	MU	à Maurice
+102$a	MU	Ã  Maurice
 102$a	MR	en Mauritanie
-102$a	YT	à Mayotte
+102$a	YT	Ã  Mayotte
 102$a	MX	au Mexique
-102$a	FM	dans les Etats Fédérés de Micronésie
-102$a	MD	en République de Moldova
-102$a	MC	à Monaco
+102$a	FM	dans les Etats FÃ©dÃ©rÃ©s de MicronÃ©sie
+102$a	MD	en RÃ©publique de Moldova
+102$a	MC	Ã  Monaco
 102$a	MN	en Mongolie
-102$a	MS	à Montserrat
+102$a	MS	Ã  Montserrat
 102$a	MZ	au Mozambique
 102$a	ZZ	dans plusieurs pays
-102$a	MM	à Myanmar
+102$a	MM	Ã  Myanmar
 102$a	NA	en Namibie
-102$a	NR	à Nauru
-102$a	NP	au Népal
+102$a	NR	Ã  Nauru
+102$a	NP	au NÃ©pal
 102$a	NI	au Nicaragua
 102$a	NE	au Niger
-102$a	NG	au Nigéria
-102$a	NU	à Nioué
+102$a	NG	au NigÃ©ria
+102$a	NU	Ã  NiouÃ©
 102$a	NF	dans l'Ile Norfolk
-102$a	NO	en Norvège
-102$a	NC	en Nouvelle-Calédonie
-102$a	NZ	en Nouvelle-Zélande
-102$a	IO	dans le Territoire britannique de l'Océan indien
-102$a	OM	à Oman
+102$a	NO	en NorvÃ¨ge
+102$a	NC	en Nouvelle-CalÃ©donie
+102$a	NZ	en Nouvelle-ZÃ©lande
+102$a	IO	dans le Territoire britannique de l'OcÃ©an indien
+102$a	OM	Ã  Oman
 102$a	UG	en Ouganda
-102$a	UZ	en Ouzbékistan
+102$a	UZ	en OuzbÃ©kistan
 102$a	PK	au Pakistan
-102$a	PW	à Palaos
-102$a	PA	à Panama
-102$a	PG	en Papouasie-Nouvelle-Guinée
+102$a	PW	Ã  Palaos
+102$a	PA	Ã  Panama
+102$a	PG	en Papouasie-Nouvelle-GuinÃ©e
 102$a	PY	au Paraguay
 102$a	NL	aux Pays-Bas
-102$a	PE	au Pérou
+102$a	PE	au PÃ©rou
 102$a	PH	aux Philippines
-102$a	PN	à Pitcairn
+102$a	PN	Ã  Pitcairn
 102$a	PL	en Pologne
-102$a	PF	en Polynésie française
-102$a	PR	à Porto Rico
+102$a	PF	en PolynÃ©sie franÃ§aise
+102$a	PR	Ã  Porto Rico
 102$a	PT	au Portugal
 102$a	QA	au Qatar
-102$a	RE	à la Réunion
+102$a	RE	Ã  la RÃ©union
 102$a	RO	en Roumanie
 102$a	GB	au Royaume-Uni
-102$a	RU	dans la Fédération de Russie
+102$a	RU	dans la FÃ©dÃ©ration de Russie
 102$a	RW	au Rwanda
 102$a	EH	au Sahara occidental
-102$a	SH	à Sainte-Hélène
-102$a	KN	à Saint-Kitts-et-Nevis
-102$a	LC	à Sainte-Lucie
-102$a	SM	à Saint-Marin
-102$a	PM	à Saint-Pierre-et-Miquelon
-102$a	VA	au Saint-Siège (Etat de la cité du Vatican)
-102$a	VC	à Saint-Vincent-et-aux-Grenadines
+102$a	SH	Ã  Sainte-HÃ©lÃ¨ne
+102$a	KN	Ã  Saint-Kitts-et-Nevis
+102$a	LC	Ã  Sainte-Lucie
+102$a	SM	Ã  Saint-Marin
+102$a	PM	Ã  Saint-Pierre-et-Miquelon
+102$a	VA	au Saint-SiÃ¨ge (Etat de la citÃ© du Vatican)
+102$a	VC	Ã  Saint-Vincent-et-aux-Grenadines
 102$a	SB	aux Iles Salomon
-102$a	WS	à Samoa
-102$a	AS	à Samoa américaines
-102$a	ST	à Sao Tomé-et-Principe
-102$a	SN	au Sénégal
+102$a	WS	Ã  Samoa
+102$a	AS	Ã  Samoa amÃ©ricaines
+102$a	ST	Ã  Sao TomÃ©-et-Principe
+102$a	SN	au SÃ©nÃ©gal
 102$a	SC	aux Seychelles
 102$a	SL	en Sierra Leone
-102$a	SG	à Singapour
+102$a	SG	Ã  Singapour
 102$a	SK	en Slovaquie
-102$a	SI	en Slovénie
+102$a	SI	en SlovÃ©nie
 102$a	SO	en Somalie
 102$a	SD	au Soudan
 102$a	LK	au Sri Lanka
-102$a	SE	en Suède
+102$a	SE	en SuÃ¨de
 102$a	CH	en Suisse
 102$a	SR	au Suriname
-102$a	SJ	au Svalbard et dans l'île Jan Mayen
+102$a	SJ	au Svalbard et dans l'Ã®le Jan Mayen
 102$a	SZ	au Swaziland
-102$a	SY	en République arabe syrienne
+102$a	SY	en RÃ©publique arabe syrienne
 102$a	TJ	au Tadjikistan
-102$a	TW	à Taïwan, Province de Chine
-102$a	TZ	en République unie de Tanzanie
+102$a	TW	Ã  TaÃ¯wan, Province de Chine
+102$a	TZ	en RÃ©publique unie de Tanzanie
 102$a	TD	au Tchad
-102$a	CZ	en République Tchèque
-102$a	TF	dans les Terres australes françaises
-102$a	TH	en Thaïlande
+102$a	CZ	en RÃ©publique TchÃ¨que
+102$a	TF	dans les Terres australes franÃ§aises
+102$a	TH	en ThaÃ¯lande
 102$a	TP	au Timor oriental
 102$a	TG	au Togo
-102$a	TK	à Tokelau
-102$a	TO	à Tonga
-102$a	TT	à Trinité-et-Tobago
+102$a	TK	Ã  Tokelau
+102$a	TO	Ã  Tonga
+102$a	TT	Ã  TrinitÃ©-et-Tobago
 102$a	TN	en Tunisie
-102$a	TM	au Turkménistan
-102$a	TC	aux Iles Turks et Caïques
+102$a	TM	au TurkmÃ©nistan
+102$a	TC	aux Iles Turks et CaÃ¯ques
 102$a	TR	en Turquie
-102$a	TV	à Tuvalu
+102$a	TV	Ã  Tuvalu
 102$a	UA	en Ukraine
 102$a	UY	en Uruguay
-102$a	VU	à Vanuatu
+102$a	VU	Ã  Vanuatu
 102$a	VE	au Venezuela
 102$a	VN	au Viet Nam
-102$a	WF	à Wallis et Futuna
-102$a	YE	au Yémen
+102$a	WF	Ã  Wallis et Futuna
+102$a	YE	au YÃ©men
 102$a	YU	en Yougoslavie
 102$a	ZM	en Zambie
 102$a	ZW	au Zimbabwe
-104$a	a	Jeunesse en général
-104$a	b	Pré-scolaire, 0-5 ans
+104$a	a	Jeunesse en gÃ©nÃ©ral
+104$a	b	PrÃ©-scolaire, 0-5 ans
 104$a	c	Scolaire, 5-10 ans
 104$a	d	Enfant, 9-14 ans
 104$a	e	Jeune adulte, 14-20 ans
 104$a	k	Adulte, haut niveau
 104$a	m	Adulte, grand public
 104$a	u	Inconnu
-104$b	a	Fédéral/national
+104$b	a	FÃ©dÃ©ral/national
 104$b	b	Etat/province
-104$b	c	Comté/département
+104$b	c	ComtÃ©/dÃ©partement
 104$b	d	Local (municipal, etc...)
-104$b	e	Multi-local (inter-départemental, etc... sous le niveau national)
+104$b	e	Multi-local (inter-dÃ©partemental, etc... sous le niveau national)
 104$b	f	Inter-gouvernemental
 104$b	g	Gouvernement en exil ou clandestin
-104$b	h	Niveau indéterminé
+104$b	h	Niveau indÃ©terminÃ©
 104$b	u	Inconnu
 104$b	y	Il ne s'agit pas d'une publication officielle
 104$b	z	Autre instance officielle
-104$c	a	Norme ISO pour la translittération
+104$c	a	Norme ISO pour la translittÃ©ration
 104$c	b	Autre
-104$c	c	Translittérations multiples : ISO et autres règles
-104$c	y	Sans règles de translittération
+104$c	c	TranslittÃ©rations multiples : ISO et autres rÃ¨gles
+104$c	y	Sans rÃ¨gles de translittÃ©ration
 104$d	ba	Latin
 104$d	ca	Cyrillique
-104$d	da	Japonais - alphabet non précisé
+104$d	da	Japonais - alphabet non prÃ©cisÃ©
 104$d	db	Japonais - Kanji
 104$d	dc	Japonais - Kana
 104$d	ea	Chinois
 104$d	fa	Arabe
 104$d	ga	Grec
-104$d	ha	Hébreu
+104$d	ha	HÃ©breu
 104$d	ia	Thai
 104$d	ja	Devanagari
-104$d	ka	Coréen
+104$d	ka	CorÃ©en
 104$d	la	Tamil
-104$d	ma	Géorgien
+104$d	ma	GÃ©orgien
 104$d	zz	Autres
 104$f	ger	Allemand
 104$f	eng	Anglais
 104$f	spa	Espagnol
-104$f	fre	Français
+104$f	fre	FranÃ§ais
 104$f	dut	Hollandais
 104$f	ita	Italien
 104$f	mul	Multilingue
-104$f	und	Non défini
+104$f	und	Non dÃ©fini
 105$a	a	Illustrations
 105$a	b	Cartes
 105$a	c	Portraits
 105$a	d	Cartes marines
 105$a	e	Plans
 105$a	f	Planches
-105$a	g	Musique imprimée
-105$a	h	Fac-similés
+105$a	g	Musique imprimÃ©e
+105$a	h	Fac-similÃ©s
 105$a	i	Armoiries
-105$a	j	Tables généalogiques
+105$a	j	Tables gÃ©nÃ©alogiques
 105$a	k	Formulaires
 105$a	l	Specimens
 105$a	m	Enregistrement sonore
@@ -738,49 +738,49 @@
 105$b	a	Bibliographie
 105$b	b	Catalogue
 105$b	c	Index
-105$b	d	Résumé
+105$b	d	RÃ©sumÃ©
 105$b	e	Dictionnaire
-105$b	f	Encyclopédie
-105$b	g	Répertoire
+105$b	f	EncyclopÃ©die
+105$b	g	RÃ©pertoire
 105$b	h	Description de projet
 105$b	i	Statistiques
-105$b	j	Manuel d'enseignement programmé
+105$b	j	Manuel d'enseignement programmÃ©
 105$b	k	Brevet
 105$b	l	Norme
-105$b	m	Mémoire ou thèse
-105$b	n	Lois et décrets
-105$b	o	Table numérique
+105$b	m	MÃ©moire ou thÃ¨se
+105$b	n	Lois et dÃ©crets
+105$b	o	Table numÃ©rique
 105$b	p	Rapport technique
 105$b	q	Sujet d'examen
-105$b	r	Synthèse bibliographique
-105$b	s	Traité
-105$b	t	Bande dessinée
+105$b	r	SynthÃ¨se bibliographique
+105$b	s	TraitÃ©
+105$b	t	Bande dessinÃ©e
 105$b	z	Autres
 105$b	#	Valeur non requise	
-105$f	b	Théâtre
+105$f	b	ThÃ©Ã¢tre
 105$f	c	Essais
 105$f	d	Humour, satire
 105$f	e	Lettres
 105$f	f	Nouvelles
-105$f	g	Poésie
+105$f	g	PoÃ©sie
 105$f	h	Discours, art oratoire
-105$f	y	Il ne s'agit pas d'un texte littéraire
-105$f	z	Formes variées ou autres formes littéraires
+105$f	y	Il ne s'agit pas d'un texte littÃ©raire
+105$f	z	Formes variÃ©es ou autres formes littÃ©raires
 105$g	a	Autobiographie
 105$g	b	Biographie individuelle
 105$g	c	Biographie collective
 105$g	d	Contient des informations biographiques
 105$g	y	Il ne s'agit pas d'une biographie
-106$a	d	Impression en gros caractères
+106$a	d	Impression en gros caractÃ¨res
 106$a	e	Journal
-106$a	f	Caractères Braille et Moon
+106$a	f	CaractÃ¨res Braille et Moon
 106$a	g	Micro-impression
 106$a	h	Manuscrit
 106$a	i	Multimedia
-106$a	j	Impression en réduction
+106$a	j	Impression en rÃ©duction
 106$a	r	Impression normale
-106$a	z	Autres formes de présentation
-110$a	a	Périodique
+106$a	z	Autres formes de prÃ©sentation
+110$a	a	PÃ©riodique
 110$a	b	Collection de monographies
 110$a	c	Journal
 110$a	z	Autres
@@ -800,77 +800,77 @@
 110$b	n	Trois fois par semaine
 110$b	o	Trois fois par mois
 110$b	u	Inconnue
-110$b	y	Sans périodicité
+110$b	y	Sans pÃ©riodicitÃ©
 110$b	z	Autre
-110$c	a	Régulier
-110$c	b	Normalement irrégulier
+110$c	a	RÃ©gulier
+110$c	b	Normalement irrÃ©gulier
 110$c	u	Inconnu
-110$c	y	Irrégulier
+110$c	y	IrrÃ©gulier
 110$d	a	Bibliographie
 110$d	b	Catalogue
 110$d	c	Index
-110$d	d	Résumé ou extraits
+110$d	d	RÃ©sumÃ© ou extraits
 110$d	e	Dictionnaire
-110$d	f	Encyclopédie
-110$d	g	Répertoire
+110$d	f	EncyclopÃ©die
+110$d	g	RÃ©pertoire
 110$d	h	Annuaire
 110$d	i	Statistiques
-110$d	j	Manuel d'enseignement programmé
+110$d	j	Manuel d'enseignement programmÃ©
 110$d	k	Revue critique
 110$d	l	Journal officiel
 110$d	m	Jurisprudence
 110$d	n	Article juridique
 110$d	o	Affaire et note juridique
 110$d	p	Biographie
-110$d	r	Synthèse biographique
-110$d	t	Dessin humoristique ou bande dessinée
+110$d	r	SynthÃ¨se biographique
+110$d	t	Dessin humoristique ou bande dessinÃ©e
 110$d	z	Autres formes de contenu
 110$d	#	Position non requise
 110$e	a	Bibliographie
 110$e	b	Catalogue
 110$e	c	Index
-110$e	d	Résumé ou extraits
+110$e	d	RÃ©sumÃ© ou extraits
 110$e	e	Dictionnaire
-110$e	f	Encyclopédie
-110$e	g	Répertoire
+110$e	f	EncyclopÃ©die
+110$e	g	RÃ©pertoire
 110$e	h	Annuaire
 110$e	i	Statistiques
-110$e	j	Manuel d'enseignement programmé
+110$e	j	Manuel d'enseignement programmÃ©
 110$e	k	Revue critique
 110$e	l	Journal officiel
 110$e	m	Jurisprudence
 110$e	n	Article juridique
 110$e	o	Affaire et note juridique
 110$e	p	Biographie
-110$e	r	Synthèse biographique
-110$e	t	Dessin humoristique ou bande dessinée
+110$e	r	SynthÃ¨se biographique
+110$e	t	Dessin humoristique ou bande dessinÃ©e
 110$e	z	Autres formes de contenu
 110$e	#	Position non requise
 110$g	a	Dans le dernier fascicule - volante
-110$g	b	Dans le dernier fascicule - réliée
+110$g	b	Dans le dernier fascicule - rÃ©liÃ©e
 110$g	c	Dans le premier fascicule du volume suivant - volante
-110$g	d	Dans le premier fascicule du volume suivant - reliée
-110$g	e	Editée séparément - gratuitement, sur commande
-110$g	f	Editée séparément - gratuitement, envoi automatique
-110$g	g	Editée séparément - sur commande, à titre onéreux
-110$g	u	Inconnue à la création de notice
+110$g	d	Dans le premier fascicule du volume suivant - reliÃ©e
+110$g	e	EditÃ©e sÃ©parÃ©ment - gratuitement, sur commande
+110$g	f	EditÃ©e sÃ©parÃ©ment - gratuitement, envoi automatique
+110$g	g	EditÃ©e sÃ©parÃ©ment - sur commande, Ã  titre onÃ©reux
+110$g	u	Inconnue Ã  la crÃ©ation de notice
 110$g	x	Non applicable
 110$g	y	Pas de page de titre parue
 110$g	z	Autre
 110$h	a	Chaque fascicule contient son propre index - volant
-110$h	b	Dans le dernier fascicule - volant - pagination séparée
-110$h	c	Dans le dernier fascicule - non paginé
-110$h	d	Dans le dernier fascicule - relié
-110$h	e	Dans le premier fascicule - volant - pagination séparée
-110$h	f	Dans le premier fascicule - volant - non paginé
-110$h	g	Dans le premier fasciule - relié
-110$h	h	Edité séparément - gratuit - envoi automatique
-110$h	i	Edité séparément - gratuit sur demande
-110$h	j	Edité séparément - reliure d'éditeur - gratuit - envoi automatique
-110$h	k	Edité séparément - reliure d'éditeur - gratuit sur demande
-110$h	l	Edité séparément - reliure d'éditeur - commandé à titre onéreux
-110$h	m	Supplément ou sous-série indexé dans la publication mère
-110$h	u	Inconnu au moment de la création de notice
+110$h	b	Dans le dernier fascicule - volant - pagination sÃ©parÃ©e
+110$h	c	Dans le dernier fascicule - non paginÃ©
+110$h	d	Dans le dernier fascicule - reliÃ©
+110$h	e	Dans le premier fascicule - volant - pagination sÃ©parÃ©e
+110$h	f	Dans le premier fascicule - volant - non paginÃ©
+110$h	g	Dans le premier fasciule - reliÃ©
+110$h	h	EditÃ© sÃ©parÃ©ment - gratuit - envoi automatique
+110$h	i	EditÃ© sÃ©parÃ©ment - gratuit sur demande
+110$h	j	EditÃ© sÃ©parÃ©ment - reliure d'Ã©diteur - gratuit - envoi automatique
+110$h	k	EditÃ© sÃ©parÃ©ment - reliure d'Ã©diteur - gratuit sur demande
+110$h	l	EditÃ© sÃ©parÃ©ment - reliure d'Ã©diteur - commandÃ© Ã  titre onÃ©reux
+110$h	m	SupplÃ©ment ou sous-sÃ©rie indexÃ© dans la publication mÃ¨re
+110$h	u	Inconnu au moment de la crÃ©ation de notice
 110$h	x	Non applicable
 110$h	y	Index indisponible
 110$h	z	Autre
@@ -889,6 +889,6 @@
 110$z	m	triennal
 110$z	n	trois fois par semaine
 110$z	o	trois fois par mois
-110$z	u	périodicité inconnue
-110$z	y	périodicité irrégulière
-110$z	z	autre périodicité
+110$z	u	pÃ©riodicitÃ© inconnue
+110$z	y	pÃ©riodicitÃ© irrÃ©guliÃ¨re
+110$z	z	autre pÃ©riodicitÃ©
