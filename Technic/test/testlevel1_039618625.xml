@@ -1,0 +1,218 @@
+<record>
+  <leader>     cas0 22        450 </leader>
+  <controlfield tag="001">039618625</controlfield>
+  <controlfield tag="003">http://www.sudoc.fr/039618625</controlfield>
+  <controlfield tag="005">20110224063745.000</controlfield>
+  <datafield tag="011" ind1=" " ind2=" ">
+    <subfield code="a">0750-3296</subfield>
+    <subfield code="f">0750-3296</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">ccn0750-3296</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">issn07503296</subfield>
+  </datafield>
+  <datafield tag="100" ind1=" " ind2=" ">
+    <subfield code="a">19830922a19639999u  y0frey50      ba</subfield>
+  </datafield>
+  <datafield tag="101" ind1="0" ind2=" ">
+    <subfield code="a">fre</subfield>
+  </datafield>
+  <datafield tag="102" ind1=" " ind2=" ">
+    <subfield code="a">FR</subfield>
+  </datafield>
+  <datafield tag="105" ind1=" " ind2=" ">
+    <subfield code="a">y   |||||||||</subfield>
+  </datafield>
+  <datafield tag="110" ind1=" " ind2=" ">
+    <subfield code="a">agu|||||uu|</subfield>
+  </datafield>
+  <datafield tag="200" ind1="1" ind2=" ">
+    <subfield code="a">Compagnons et maîtres d&apos;oeuvre</subfield>
+    <subfield code="b">Texte imprimé</subfield>
+    <subfield code="e">la voix des compagnons</subfield>
+  </datafield>
+  <datafield tag="210" ind1=" " ind2=" ">
+    <subfield code="a">Ivry sur seine</subfield>
+    <subfield code="c">Fédération compagnonnique des métiers du bâtiment et autres activités</subfield>
+    <subfield code="d">1963-</subfield>
+  </datafield>
+  <datafield tag="316" ind1=" " ind2=" ">
+    <subfield code="5">640246201:12458375X</subfield>
+    <subfield code="a">Lacunes (1988) 226, (1989) 231, (1990) 237, (1991) 238 et 241, (1992) 243, (1998) 266 à 269, (2000) 276</subfield>
+  </datafield>
+  <datafield tag="530" ind1="0" ind2=" ">
+    <subfield code="a">Compagnons et maîtres d&apos;oeuvre</subfield>
+  </datafield>
+  <datafield tag="531" ind1=" " ind2=" ">
+    <subfield code="a">Compagnons maîtres d&apos;oeuvre</subfield>
+  </datafield>
+  <datafield tag="675" ind1=" " ind2=" ">
+    <subfield code="a">69</subfield>
+  </datafield>
+  <datafield tag="676" ind1=" " ind2=" ">
+    <subfield code="a">690</subfield>
+    <subfield code="v">[original]</subfield>
+  </datafield>
+  <datafield tag="712" ind1="0" ind2="2">
+    <subfield code="3">030433932</subfield>
+    <subfield code="a">Fédération nationale compagnonnique des métiers du bâtiment et autres activités</subfield>
+    <subfield code="c">France</subfield>
+    <subfield code="4">340</subfield>
+  </datafield>
+  <datafield tag="801" ind1=" " ind2="3">
+    <subfield code="a">FR</subfield>
+    <subfield code="b">Abes</subfield>
+    <subfield code="c">20110224</subfield>
+    <subfield code="g">AFNOR</subfield>
+  </datafield>
+  <datafield tag="801" ind1=" " ind2="3">
+    <subfield code="a">FR</subfield>
+    <subfield code="b">ISSN</subfield>
+    <subfield code="c">20061002</subfield>
+  </datafield>
+  <datafield tag="802" ind1=" " ind2=" ">
+    <subfield code="a">07</subfield>
+  </datafield>
+  <datafield tag="856" ind1="4" ind2=" ">
+    <subfield code="5">751131015:124583784</subfield>
+    <subfield code="u">http://catalogue.bnf.fr/</subfield>
+  </datafield>
+  <datafield tag="930" ind1=" " ind2=" ">
+    <subfield code="5">640246201:12458375X01</subfield>
+    <subfield code="b">640246201</subfield>
+    <subfield code="z">PCAq</subfield>
+    <subfield code="j">f</subfield>
+  </datafield>
+  <datafield tag="940" ind1=" " ind2=" ">
+    <subfield code="5">640246201:12458375X01</subfield>
+    <subfield code="a">19990922</subfield>
+    <subfield code="b">rO</subfield>
+  </datafield>
+  <datafield tag="941" ind1=" " ind2=" ">
+    <subfield code="5">640246201:12458375X01</subfield>
+    <subfield code="a">20101001</subfield>
+    <subfield code="b">09:37:39.000</subfield>
+  </datafield>
+  <datafield tag="955" ind1="4" ind2="1">
+    <subfield code="5">640246201:12458375X01</subfield>
+    <subfield code="b">225</subfield>
+    <subfield code="i">1988</subfield>
+    <subfield code="i"/>
+    <subfield code="j"/>
+    <subfield code="k"/>
+    <subfield code="a"/>
+    <subfield code="b"/>
+    <subfield code="c"/>
+    <subfield code="r">no. 225 (1988)-....</subfield>
+  </datafield>
+  <datafield tag="930" ind1=" " ind2=" ">
+    <subfield code="5">751135401:40454141001</subfield>
+    <subfield code="b">751135401</subfield>
+    <subfield code="a">Specimen 3305</subfield>
+    <subfield code="j">f</subfield>
+  </datafield>
+  <datafield tag="940" ind1=" " ind2=" ">
+    <subfield code="5">751135401:40454141001</subfield>
+    <subfield code="a">20100915</subfield>
+    <subfield code="b">xF</subfield>
+  </datafield>
+  <datafield tag="941" ind1=" " ind2=" ">
+    <subfield code="5">751135401:40454141001</subfield>
+    <subfield code="a">20100915</subfield>
+    <subfield code="b">10:59:24.000</subfield>
+  </datafield>
+  <datafield tag="955" ind1="4" ind2="1">
+    <subfield code="5">751135401:40454141001</subfield>
+    <subfield code="b">239</subfield>
+    <subfield code="i">1991</subfield>
+    <subfield code="r">no. 239 (1991)</subfield>
+  </datafield>
+  <datafield tag="930" ind1=" " ind2=" ">
+    <subfield code="5">751045101:12458376801</subfield>
+    <subfield code="b">751045101</subfield>
+    <subfield code="a">G89 Fol</subfield>
+    <subfield code="j">f</subfield>
+  </datafield>
+  <datafield tag="940" ind1=" " ind2=" ">
+    <subfield code="5">751045101:12458376801</subfield>
+    <subfield code="a">19990914</subfield>
+    <subfield code="b">rF</subfield>
+  </datafield>
+  <datafield tag="941" ind1=" " ind2=" ">
+    <subfield code="5">751045101:12458376801</subfield>
+    <subfield code="a">20000813</subfield>
+    <subfield code="b">17:57:01.000</subfield>
+  </datafield>
+  <datafield tag="955" ind1=" " ind2=" ">
+    <subfield code="5">751045101:12458376801</subfield>
+    <subfield code="i">1972</subfield>
+    <subfield code="i">1979</subfield>
+    <subfield code="r">(1972)</subfield>
+  </datafield>
+  <datafield tag="930" ind1=" " ind2=" ">
+    <subfield code="5">870855102:12458377601</subfield>
+    <subfield code="b">870855102</subfield>
+    <subfield code="a">SAHL</subfield>
+    <subfield code="j">f</subfield>
+  </datafield>
+  <datafield tag="940" ind1=" " ind2=" ">
+    <subfield code="5">870855102:12458377601</subfield>
+    <subfield code="a">19910101</subfield>
+    <subfield code="b">rF</subfield>
+  </datafield>
+  <datafield tag="941" ind1=" " ind2=" ">
+    <subfield code="5">870855102:12458377601</subfield>
+    <subfield code="a">20020614</subfield>
+    <subfield code="b">13:23:00.924</subfield>
+  </datafield>
+  <datafield tag="955" ind1="4" ind2="1">
+    <subfield code="5">870855102:12458377601</subfield>
+    <subfield code="i">1977</subfield>
+    <subfield code="i">1984</subfield>
+    <subfield code="r">(1977) - (1984)</subfield>
+  </datafield>
+  <datafield tag="930" ind1=" " ind2=" ">
+    <subfield code="5">590092301:48270876X01</subfield>
+    <subfield code="b">590092301</subfield>
+    <subfield code="j">f</subfield>
+  </datafield>
+  <datafield tag="940" ind1=" " ind2=" ">
+    <subfield code="5">590092301:48270876X01</subfield>
+    <subfield code="a">20130617</subfield>
+    <subfield code="b">xF</subfield>
+  </datafield>
+  <datafield tag="941" ind1=" " ind2=" ">
+    <subfield code="5">590092301:48270876X01</subfield>
+    <subfield code="a">20130617</subfield>
+    <subfield code="b">17:39:18.000</subfield>
+  </datafield>
+  <datafield tag="955" ind1="4" ind2="1">
+    <subfield code="5">590092301:48270876X01</subfield>
+    <subfield code="i">1963</subfield>
+    <subfield code="i">1964</subfield>
+    <subfield code="r">(1963) - (1964)</subfield>
+  </datafield>
+  <datafield tag="930" ind1=" " ind2=" ">
+    <subfield code="5">751131015:12458378401</subfield>
+    <subfield code="b">751131015</subfield>
+    <subfield code="j">f</subfield>
+  </datafield>
+  <datafield tag="940" ind1=" " ind2=" ">
+    <subfield code="5">751131015:12458378401</subfield>
+    <subfield code="a">20060623</subfield>
+    <subfield code="b">x</subfield>
+  </datafield>
+  <datafield tag="941" ind1=" " ind2=" ">
+    <subfield code="5">751131015:12458378401</subfield>
+    <subfield code="a">20060627</subfield>
+    <subfield code="b">12:22:57.000</subfield>
+  </datafield>
+  <datafield tag="955" ind1=" " ind2=" ">
+    <subfield code="5">751131015:12458378401</subfield>
+    <subfield code="z">Consulter le catalogue de la BnF</subfield>
+    <subfield code="r"> [Consulter le catalogue de la BnF]</subfield>
+  </datafield>
+</record>
+
