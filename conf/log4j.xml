@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+	<!--
+		=====================================================================
+
+		Log4j Configuration
+	
+		=====================================================================
+	-->
+
+	<!--
+		| For more configuration infromation and examples see the Jakarta
+		Log4j | owebsite: http://jakarta.apache.org/log4j
+	-->
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"
+	debug="false">
+
+
+
+
+	<!-- ============================== -->
+	<!-- Append messages to the console -->
+	<!-- ============================== -->
+
+	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+
+		<param name="Target" value="System.out" />
+		<param name="Threshold" value="DEBUG" />
+
+		<layout class="org.apache.log4j.PatternLayout">
+			<!-- The default pattern: Date Priority [Category] Message\n -->
+			<!--
+				<param name="ConversionPattern" value="%d{ABSOLUTE} %-5p [%c{1}]
+				%m%n"/>
+			-->
+			<param name="ConversionPattern" value="%d %-4r [%t] %-4p %c{4} %x - %m%n" />
+		</layout>
+	</appender>
+
+    <appender name="FILELOG" class="org.apache.log4j.FileAppender">
+        <param name="File" value="/home/batch/exportslibreservice/exportslibreservice.log" />
+        <param name="Threshold" value="DEBUG" />
+        <param name="Append" value="true" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %-4r [%t] %-4p %c{4} %x - %m%n" />
+        </layout>           
+     </appender>
+
+
+
+
+
+
+	<!--
+
+		<appender name="CHAINSAW" class="org.apache.log4j.net.SocketAppender">
+		<param name="Port" value="4445"/> <param name="RemoteHost"
+		value="localhost"/> <param name="LocationInfo" value="false"/>
+		</appender>
+	-->
+
+
+
+	<!-- ================ -->
+	<!-- Limit categories -->
+	<!-- ================ -->
+	
+	<category name="fr.abes.derives.connection" additivity="false">
+		<priority value="INFO" />
+		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="FILELOG"/>
+	</category>
+	
+	<category name="fr.abes.derives.extract" additivity="false">
+		<priority value="INFO" />
+		<appender-ref ref="CONSOLE" />		
+		<appender-ref ref="FILELOG"/>
+	</category>
+	
+	
+	<category name="fr.abes.derives.xsltransform" additivity="false">
+		<priority value="WARN" />
+		<appender-ref ref="CONSOLE" />
+                <appender-ref ref="FILELOG"/>		
+	</category>
+
+
+
+	<category name="fr.abes.derives.sax" additivity="false">
+		<priority value="WARN" />
+		<appender-ref ref="CONSOLE" />
+	</category>
+
+	<category name="fr.abes.derives.cli" additivity="false">
+		<priority value="WARN" />
+		<appender-ref ref="CONSOLE" />
+                <appender-ref ref="FILELOG"/>
+	</category>
+
+	
+	<category name="fr.abes.technic" additivity="false">
+		<priority value="WARN" />
+		<appender-ref ref="CONSOLE" />
+                <appender-ref ref="FILELOG"/>
+	</category>
+
+	<category name="fr.abes.utils" additivity="false">
+		<priority value="ERROR" />
+		<appender-ref ref="CONSOLE" />
+                <appender-ref ref="FILELOG"/>
+	</category>
+	
+	
+
+	<category name="other" additivity="false">
+		<priority value="DEBUG" />
+		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="FILELOG"/>						
+	</category>
+
+
+
+
+	<!-- ======================= -->
+	<!-- Setup the Root category -->
+	<!-- ======================= -->
+
+	<root>
+		<priority value="WARN" />
+		<appender-ref ref="CONSOLE" />
+	</root>
+
+
+
+</log4j:configuration>
