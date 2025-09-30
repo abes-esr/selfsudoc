@@ -10,6 +10,7 @@
         <module>iText-src-5.0.2</module>
         <module>iTextRenderer</module>
         <module>Technic</module>
+        <module>Renderer</module>
     </modules>
 
     <distributionManagement>
