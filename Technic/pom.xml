@@ -1,6 +1,20 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>Technic</artifactId>
+
+    <parent>
+        <groupId>fr.abes.selfsudoc</groupId>
+        <artifactId>SELFSudoc</artifactId>
+        <version>1.0.1-SNAPSHOT</version>
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+    </properties>
+
     <build>
         <sourceDirectory>src</sourceDirectory>
         <testSourceDirectory>test</testSourceDirectory>
@@ -16,22 +30,21 @@
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.3</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.12.4</version>
                 <configuration>
-                    <argLine>-Djavax.xml.parsers.SAXParserFactory=org.apache.xerces.jaxp.SAXParserFactoryImpl -Djavax.xml.transform.TransformerFactory=net.sf.saxon.TransformerFactoryImpl -Djavax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom=net.sf.saxon.xpath.XPathFactoryImpl -Dlog4j.configuration=${project.parent.basedir}/Renderer/conf/log4j.xml</argLine>
+                    <argLine>-Djavax.xml.parsers.SAXParserFactory=org.apache.xerces.jaxp.SAXParserFactoryImpl
+                        -Djavax.xml.transform.TransformerFactory=net.sf.saxon.TransformerFactoryImpl
+                        -Djavax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom=net.sf.saxon.xpath.XPathFactoryImpl
+                        -Dlog4j.configuration=${project.parent.basedir}/Renderer/conf/log4j.xml
+                    </argLine>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
 
     <distributionManagement>
         <repository>
@@ -43,7 +56,6 @@
             <url>https://artifactory.abes.fr/artifactory/libs-snapshot-local</url>
         </snapshotRepository>
     </distributionManagement>
-
 
     <repositories>
         <repository>
@@ -59,16 +71,6 @@
             <url>https://artifactory.abes.fr/artifactory/maven-public/</url>
         </pluginRepository>
     </pluginRepositories>
-
-    <parent>
-        <groupId>fr.abes.selfsudoc</groupId>
-        <artifactId>SELFSudoc</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
 
     <dependencies>
         <dependency>
