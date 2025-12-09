@@ -1,6 +1,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>Renderer</artifactId>
+
+    <parent>
+        <groupId>fr.abes.selfsudoc</groupId>
+        <artifactId>SELFSudoc</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>Cp1252</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+    </properties>
+
     <build>
         <sourceDirectory>src</sourceDirectory>
         <testSourceDirectory>test</testSourceDirectory>
@@ -16,52 +29,10 @@
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.3</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
             </plugin>
         </plugins>
     </build>
 
-
-    <distributionManagement>
-        <repository>
-            <id>artifactory-release</id>
-            <url>https://artifactory.abes.fr/artifactory/libs-release-local</url>
-        </repository>
-        <snapshotRepository>
-            <id>artifactory-snapshot</id>
-            <url>https://artifactory.abes.fr/artifactory/libs-snapshot-local</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-
-    <repositories>
-        <repository>
-            <id>artifactory-public</id>
-            <name>artifactory-public</name>
-            <url>https://artifactory.abes.fr/artifactory/maven-public/</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>artifactory-public</id>
-            <name>artifactory-public</name>
-            <url>https://artifactory.abes.fr/artifactory/maven-public/</url>
-        </pluginRepository>
-    </pluginRepositories>
-
-    <properties>
-        <project.build.sourceEncoding>Cp1252</project.build.sourceEncoding>
-    </properties>
-
-
-    <parent>
-        <groupId>fr.abes.selfsudoc</groupId>
-        <artifactId>SELFSudoc</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
     <dependencies>
         <dependency>
             <groupId>${project.parent.groupId}</groupId>
