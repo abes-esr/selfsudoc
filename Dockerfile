@@ -25,12 +25,12 @@ RUN mvn --batch-mode \
         -Dmaven.test.skip=false \
         -Duser.timezone=Europe/Paris \
         -Duser.language=fr \
-        package \
+        package
 
 
 
 ## Batch Renderer
-FROM eclipse-temurin:8-jre-noble as batch-image
+FROM eclipse-temurin:8-jre-noble AS batch-image
 
 RUN mkdir -p /lib/ext
 COPY --from=build-image /build/iText-src-5.0.2/target/*.jar /lib/iText-src-5.0.2-0.0.1.jar
@@ -43,4 +43,4 @@ ENV JAVA_OPTIONS="-Dlog4j.configuration=file:/conf/log4j.xml"
 ENV CLASS_MAIN=fr.abes.derives.cli.Chain
 ENV ARG_MAIN="extracted cleaned grouped filtered sorted xhtml rtf pdf slk"
 
-CMD java -cp /lib/*:/lib/ext/* $JAVA_OPTIONS $CLASS_MAIN $ARG_MAIN
+CMD ["java", "-cp /lib/*:/lib/ext/*", "$JAVA_OPTIONS $CLASS_MAIN $ARG_MAIN"]
