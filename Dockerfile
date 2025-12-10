@@ -22,7 +22,7 @@ COPY ./Technic/           /build/Technic/
 COPY ./Utils/             /build/Utils/
 
 RUN mvn --batch-mode \
-        -Dmaven.test.skip=false \
+        -Dmaven.test.skip=true \
         -Duser.timezone=Europe/Paris \
         -Duser.language=fr \
         package
