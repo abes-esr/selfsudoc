@@ -38,6 +38,7 @@ COPY --from=build-image /build/iTextRenderer/target/*.jar /lib/iTextRenderer.jar
 COPY --from=build-image /build/Renderer/target/*.jar /lib/Renderer.jar
 COPY --from=build-image /build/Technic/target/*.jar /lib/Technic.jar
 COPY --from=build-image /build/Utils/target/*.jar /lib/Utils.jar
+COPY ./conf/log4j.xml /conf/log4j.xml
 
 ENV JAVA_OPTIONS="-Dlog4j.configuration=file:/conf/log4j.xml"
 ENV CLASS_MAIN=fr.abes.derives.cli.Chain
