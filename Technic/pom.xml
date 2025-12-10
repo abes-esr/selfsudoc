@@ -13,6 +13,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+        <saxon-version>9.1.0.8</saxon-version>
     </properties>
 
     <build>
@@ -80,19 +81,19 @@
         <dependency>
             <groupId>net.sourceforge.saxon</groupId>
             <artifactId>saxon</artifactId>
-            <version>9.1.0.8</version>
+            <version>${saxon-version}</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>net.sourceforge.saxon</groupId>
             <artifactId>saxon-dom</artifactId>
-            <version>9.1.0.8</version>
+            <version>${saxon-version}</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>net.sourceforge.saxon</groupId>
             <artifactId>saxon-xpath</artifactId>
-            <version>9.1.0.8</version>
+            <version>${saxon-version}</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
