@@ -25,7 +25,7 @@ RUN mvn --batch-mode \
         -Dmaven.test.skip=true \
         -Duser.timezone=Europe/Paris \
         -Duser.language=fr \
-        package
+        package -Passembly
 
 
 
