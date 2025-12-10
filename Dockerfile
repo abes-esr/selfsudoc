@@ -43,4 +43,4 @@ ENV JAVA_OPTIONS="-Dlog4j.configuration=file:/conf/log4j.xml"
 ENV CLASS_MAIN=fr.abes.derives.cli.Chain
 ENV ARG_MAIN="extracted cleaned grouped filtered sorted xhtml rtf pdf slk"
 
-CMD ["java", "-cp /lib/*:/lib/ext/*", "$JAVA_OPTIONS $CLASS_MAIN $ARG_MAIN"]
+CMD ["sh", "-c", "exec java -cp /lib/*:/lib/ext/* $JAVA_OPTIONS $CLASS_MAIN $ARG_MAIN"]
