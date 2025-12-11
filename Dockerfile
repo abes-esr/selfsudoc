@@ -43,5 +43,6 @@ COPY ./conf/log4j.xml /conf/log4j.xml
 ENV JAVA_OPTIONS="-Dlog4j.configuration=file:/conf/log4j.xml"
 ENV CLASS_MAIN=fr.abes.derives.cli.Chain
 ENV ARG_MAIN="extracted cleaned grouped filtered sorted xhtml rtf pdf slk"
+ENV EOD_HOME=/data
 
 CMD ["sh", "-c", "exec java -cp /lib/*:/lib/ext/* $JAVA_OPTIONS $CLASS_MAIN $ARG_MAIN"]
