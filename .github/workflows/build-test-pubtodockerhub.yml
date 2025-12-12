@@ -11,11 +11,11 @@ on:
       - '.properties'
   workflow_dispatch:
 
-
 jobs:
   build-test-pubtodockerhub:
     permissions:
       id-token: write
+      attestations: write
     runs-on: ubuntu-latest
     steps:
 
