@@ -1,20 +1,16 @@
 package fr.abes.derives.connection;
 
+import fr.abes.utils.LogHelper;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
 import java.util.AbstractMap.SimpleImmutableEntry;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import fr.abes.utils.LogHelper;
 
 public class QueryProduitsDerives {
 
@@ -68,7 +64,7 @@ public class QueryProduitsDerives {
      * @param formatFinal
      * @param coordinateur
      * @param excludedDataFields
-     * @param pivotLayouts
+     * @param coordinateur
      * @param conn
      * @throws SQLException
      */
@@ -154,7 +150,6 @@ public class QueryProduitsDerives {
      *
      * excludeddatafields and layout columns will be processed in some cases with "html pivot/slk" workers
      *
-     * @param columnSourceName
      * @param columnDestinationName
      * @param conn
      * @return
