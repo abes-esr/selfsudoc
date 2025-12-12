@@ -39,15 +39,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build and push
-        id: push
         uses: docker/build-push-action@v6
         with:
           push: true
           tags: ${{ steps.docker_tag_meta.outputs.tags }}
-
-      - name: Generate artifact attestation
-        uses: actions/attest-build-provenance@v3
-        with:
-          subject-name: docker.io/${{ env.DOCKERHUB_IMAGE_PREFIX }}
-          subject-digest: ${{ steps.push.outputs.digest }}
-          push-to-registry: true
