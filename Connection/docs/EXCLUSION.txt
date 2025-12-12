@@ -1,0 +1,9 @@
+ID,URL
+210,http://carmin.sudoc.abes.fr/cgi-bin/access/guide/formats/unmb/zones/210.htm
+011,http://carmin.sudoc.abes.fr/cgi-bin/access/guide/formats/unmb/zones/011.htm
+200,http://carmin.sudoc.abes.fr/cgi-bin/access/guide/formats/unmb/zones/200.htm
+9XX,http://carmin.sudoc.abes.fr/cgi-bin/access/guide/formats/loc/index.htm#TOP
+3XX,http://carmin.sudoc.abes.fr/cgi-bin/access/guide/formats/unmb/index.htm#Bloc3XX
+4XX,http://carmin.sudoc.abes.fr/cgi-bin/access/guide/formats/unmb/index.htm#Bloc4XX
+5XX,http://carmin.sudoc.abes.fr/cgi-bin/access/guide/formats/unmb/index.htm#Bloc5XX
+8XX,http://carmin.sudoc.abes.fr/cgi-bin/access/guide/formats/unmb/index.htm#Bloc8XX
