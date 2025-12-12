@@ -7,11 +7,14 @@
     <packaging>pom</packaging>
     <description>SELFSudoc batch et servlet</description>
     <modules>
-        <module>Utils</module>
+        <module>Connection</module>
+        <module>Extract</module>
+        <module>ExportsLibreService</module>
         <module>iText-src-5.0.2</module>
         <module>iTextRenderer</module>
-        <module>Technic</module>
         <module>Renderer</module>
+        <module>Technic</module>
+        <module>Utils</module>
     </modules>
 
     <properties>
