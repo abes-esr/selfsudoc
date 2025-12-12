@@ -154,7 +154,7 @@ public class ConnectionServlet extends HttpServlet {
      * <p>
      * Map.Values can be used to list all ILNs
      *
-     * @param session
+     * @param appContext
      */
     private void checkAndCacheMapInAppContext(ServletContext appContext) {
 
