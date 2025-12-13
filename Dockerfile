@@ -6,20 +6,26 @@ WORKDIR /build/
 # On lance la compilation Java
 # On débute par une mise en cache docker des dépendances Java
 # cf https://www.baeldung.com/ops/docker-cache-maven-dependencies
-COPY ./pom.xml                 /build/pom.xml
-COPY ./iText-src-5.0.2/pom.xml /build/iText-src-5.0.2/pom.xml
-COPY ./iTextRenderer/pom.xml   /build/iTextRenderer/pom.xml
-COPY ./Renderer/pom.xml        /build/Renderer/pom.xml
-COPY ./Technic/pom.xml         /build/Technic/pom.xml
-COPY ./Utils/pom.xml           /build/Utils/pom.xml
+COPY ./pom.xml                     /build/pom.xml
+COPY ./Connection/pom.xml          /build/Connection/pom.xml
+COPY ./ExportsLibreService/pom.xml /build/ExportsLibreService/pom.xml
+COPY ./Extract/pom.xml             /build/Extract/pom.xml
+COPY ./iText-src-5.0.2/pom.xml     /build/iText-src-5.0.2/pom.xml
+COPY ./iTextRenderer/pom.xml       /build/iTextRenderer/pom.xml
+COPY ./Renderer/pom.xml            /build/Renderer/pom.xml
+COPY ./Technic/pom.xml             /build/Technic/pom.xml
+COPY ./Utils/pom.xml               /build/Utils/pom.xml
 
 RUN mvn verify --fail-never
 # et la compilation du code Java
-COPY ./iText-src-5.0.2/   /build/iText-src-5.0.2/
-COPY ./iTextRenderer/     /build/iTextRenderer/
-COPY ./Renderer/          /build/Renderer/
-COPY ./Technic/           /build/Technic/
-COPY ./Utils/             /build/Utils/
+COPY ./Connection/          /build/Connection/
+COPY ./ExportsLibreService/ /build/ExportsLibreService/
+COPY ./Extract/             /build/Extract/
+COPY ./iText-src-5.0.2/     /build/iText-src-5.0.2/
+COPY ./iTextRenderer/       /build/iTextRenderer/
+COPY ./Renderer/            /build/Renderer/
+COPY ./Technic/             /build/Technic/
+COPY ./Utils/               /build/Utils/
 
 RUN mvn --batch-mode \
         -Dmaven.test.skip=true \
