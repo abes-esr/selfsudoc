@@ -74,6 +74,11 @@
             <name>Central Repository</name>
             <url>https://repo.maven.apache.org/maven2</url>
         </repository>
+        <repository>
+            <id>datanucleus</id>
+            <name>Datanucleus Repository</name>
+            <url>https://www.datanucleus.org/downloads/maven2</url>
+        </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
