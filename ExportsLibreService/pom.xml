@@ -24,7 +24,7 @@
             </activation>
             <dependencies>
                 <dependency>
-                    <groupId>com.oracle</groupId>
+                    <groupId>oracle</groupId>
                     <artifactId>ojdbc6</artifactId>
                     <scope>provided</scope>
                 </dependency>
