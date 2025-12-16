@@ -22,35 +22,13 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-            <properties>
-                <spring.profiles.active>localhost</spring.profiles.active>
-            </properties>
             <dependencies>
                 <dependency>
                     <groupId>com.oracle</groupId>
                     <artifactId>ojdbc6</artifactId>
-                    <version>11.2.0.3</version>
+                    <scope>provided</scope>
                 </dependency>
             </dependencies>
-        </profile>
-        <profile>
-            <id>assembly</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-jar-plugin</artifactId>
-                        <version>3.3.0</version>
-                        <configuration>
-                            <archive>
-                                <manifest>
-                                    <addClasspath>false</addClasspath>
-                                </manifest>
-                            </archive>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
         </profile>
     </profiles>
 

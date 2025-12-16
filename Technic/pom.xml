@@ -13,7 +13,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
-        <saxon-version>9.1.0.8</saxon-version>
     </properties>
 
     <profiles>
@@ -22,48 +21,23 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-            <properties>
-                <spring.profiles.active>localhost</spring.profiles.active>
-            </properties>
             <dependencies>
                 <dependency>
                     <groupId>net.sourceforge.saxon</groupId>
                     <artifactId>saxon</artifactId>
-                    <version>${saxon-version}</version>
                     <scope>runtime</scope>
                 </dependency>
                 <dependency>
                     <groupId>net.sourceforge.saxon</groupId>
                     <artifactId>saxon-dom</artifactId>
-                    <version>${saxon-version}</version>
                     <scope>runtime</scope>
                 </dependency>
                 <dependency>
                     <groupId>net.sourceforge.saxon</groupId>
                     <artifactId>saxon-xpath</artifactId>
-                    <version>${saxon-version}</version>
                     <scope>runtime</scope>
                 </dependency>
             </dependencies>
-        </profile>
-        <profile>
-            <id>assembly</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-jar-plugin</artifactId>
-                        <version>3.3.0</version>
-                        <configuration>
-                            <archive>
-                                <manifest>
-                                    <addClasspath>false</addClasspath>
-                                </manifest>
-                            </archive>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
         </profile>
     </profiles>
 
