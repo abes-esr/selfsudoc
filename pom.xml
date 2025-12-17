@@ -30,6 +30,20 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
+            <repositories>
+                <repository>
+                    <id>artifactory-public</id>
+                    <name>artifactory-public</name>
+                    <url>https://artifactory.abes.fr/artifactory/maven-public/</url>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>artifactory-public</id>
+                    <name>artifactory-public</name>
+                    <url>https://artifactory.abes.fr/artifactory/maven-public/</url>
+                </pluginRepository>
+            </pluginRepositories>
         </profile>
         <profile>
             <id>assembly</id>
@@ -49,6 +63,18 @@
                     </plugin>
                 </plugins>
             </build>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <name>Central Repository</name>
+                    <url>https://repo.maven.apache.org/maven2</url>
+                </repository>
+                <repository>
+                    <id>datanucleus</id>
+                    <name>Datanucleus Repository</name>
+                    <url>https://www.datanucleus.org/downloads/maven2</url>
+                </repository>
+            </repositories>
         </profile>
     </profiles>
 
@@ -62,31 +88,6 @@
             <url>https://artifactory.abes.fr/artifactory/libs-snapshot-local</url>
         </snapshotRepository>
     </distributionManagement>
-
-    <repositories>
-        <repository>
-            <id>artifactory-public</id>
-            <name>artifactory-public</name>
-            <url>https://artifactory.abes.fr/artifactory/maven-public/</url>
-        </repository>
-        <repository>
-            <id>central</id>
-            <name>Central Repository</name>
-            <url>https://repo.maven.apache.org/maven2</url>
-        </repository>
-        <repository>
-            <id>datanucleus</id>
-            <name>Datanucleus Repository</name>
-            <url>https://www.datanucleus.org/downloads/maven2</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>artifactory-public</id>
-            <name>artifactory-public</name>
-            <url>https://artifactory.abes.fr/artifactory/maven-public/</url>
-        </pluginRepository>
-    </pluginRepositories>
 
     <dependencyManagement>
         <dependencies>
