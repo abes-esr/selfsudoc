@@ -3,9 +3,11 @@ name: "on-push-web-changes"
 on:
   push:
     paths:
+      - 'Dockerfile'
       - 'ExportsLibreService/**'
       - 'Utils/**'
       - 'Connection/**'
+      - 'pom.xml'
   workflow_dispatch:
 
 jobs:

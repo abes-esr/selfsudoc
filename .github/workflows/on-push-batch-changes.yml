@@ -2,11 +2,16 @@ name: "on-push-batch-changes"
 
 on:
   push:
-    paths-ignore:
-      - '**.md'
-      - '.github/**'
-      - '.properties'
-      - 'ExportsLibreService/**'
+    paths:
+      - 'Dockerfile'
+      - 'Utils/**'
+      - 'Connection/**'
+      - 'Extract/**'
+      - 'iText-src-5.0.2/**'
+      - 'iTextRenderer/**'
+      - 'Renderer/**'
+      - 'Technic/**'
+      - 'pom.xml'
   workflow_dispatch:
 
 jobs:
