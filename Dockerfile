@@ -35,7 +35,7 @@ RUN mvn --batch-mode \
 
 
 
-FROM eclipse-temurin:8-jre-noble AS batch-image
+FROM eclipse-temurin:8-jre-noble AS batch
 
 RUN mkdir -p /lib/ext
 COPY --from=build-image /build/iText-src-5.0.2/target/*.jar /lib/iText-src-5.0.2-0.0.1.jar
@@ -62,7 +62,7 @@ CMD ["sh", "-c", "exec java -cp /lib/*:/lib/ext/* $JAVA_OPTIONS $CLASS_MAIN $ARG
 
 
 
-FROM tomcat:8.0 AS front-image
+FROM tomcat:8.0 AS front
 # Supprimer l'application web par défaut de Tomcat
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
 # Définir le répertoire de travail dans l'étape de déploiement
