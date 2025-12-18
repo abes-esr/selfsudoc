@@ -62,7 +62,7 @@ CMD ["sh", "-c", "exec java -cp /lib/*:/lib/ext/* $JAVA_OPTIONS $CLASS_MAIN $ARG
 
 
 
-FROM tomcat:8.0 AS front
+FROM tomcat:8-jre8 AS front
 # Supprimer l'application web par défaut de Tomcat
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
 # Définir le répertoire de travail dans l'étape de déploiement
