@@ -1,0 +1,16 @@
+name: "on-push-web-changes"
+
+on:
+  push:
+    paths-ignore:
+      - '**.md'
+      - '.github/**'
+      - '.properties'
+      - 'ExportsLibreService/**'
+  workflow_dispatch:
+
+jobs:
+  on-push-web-changes:
+    uses: ./.github/workflows/build-pubtodockerhub.yml
+    with:
+      target: batch

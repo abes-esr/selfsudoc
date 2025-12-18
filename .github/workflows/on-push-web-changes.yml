@@ -1,0 +1,19 @@
+name: "on-push-web-changes"
+
+on:
+  push:
+    paths:
+      - 'ExportsLibreService/**'
+      - 'Utils/**'
+      - 'Connection/**'
+  workflow_dispatch:
+
+jobs:
+  on-push-web-changes:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: "Build and publish to Docker Hub"
+        uses: "./.github/workflows/build-pubtodockerhub.yml"
+        with:
+          target: front
