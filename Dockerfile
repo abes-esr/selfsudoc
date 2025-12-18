@@ -44,6 +44,8 @@ COPY --from=build-image /build/iTextRenderer/target/*.jar /lib/iTextRenderer.jar
 COPY --from=build-image /build/Renderer/target/*.jar /lib/Renderer.jar
 COPY --from=build-image /build/Technic/target/*.jar /lib/Technic.jar
 COPY --from=build-image /build/Utils/target/*.jar /lib/Utils.jar
+COPY --from=build-image /build/Extract/target/*.jar /lib/Extract.jar
+COPY --from=build-image /build/Connection/target/*.jar /lib/Connection.jar
 COPY ./conf/log4j.xml /conf/log4j.xml
 
 ENV JAVA_OPTIONS="-Dlog4j.configuration=file:/conf/log4j.xml"
