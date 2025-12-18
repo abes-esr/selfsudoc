@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<!DOCTYPE web-app
+        PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+    <!-- General description of your web application -->
+    <display-name>SelfSudoc (réaliser et télécharger des catalogues de ressources continues en libre service)
+    </display-name>
+    <description>
+        WebApplication permettant (sous condition d’une authentification préalable avec les identifiants WinIBW)
+        au coordinateur ou au responsable de CR de réaliser par lui-même et télécharger des catalogues de ressources
+        continues localisées par les RCR dont il a la charge, sous différents formats de présentation.
+        Elle a été développée par Thomas Michaux (michaux@abes.fr) qui doit être contacté pour plus d'information.
+    </description>
+
+    <!-- Context initialization parameters that define shared
+         String constants used within your application, which
+         can be customized by the system administrator who is
+         installing your application.  The values actually
+         assigned to these parameters can be retrieved in a
+         servlet or JSP page by calling:
+
+             String value = getServletContext().getInitParameter("name");
+
+         where "name" matches the <param-name> element of
+         one of these initialization parameters.
+
+         You can define any number of context initialization
+         parameters, including zero.
+    -->
+
+    <context-param>
+        <param-name>webmaster</param-name>
+        <param-value>michaux@abes.fr</param-value>
+        <description>
+            Adresse email de l'administrateur à qui les questions et remarques
+            à propos de cette application doivent être adressés.
+        </description>
+    </context-param>
+
+    <!-- Servlet definitions for the servlets that make up
+         your web application, including initialization
+         parameters.  With Tomcat, you can also send requests
+         to servlets not listed here with a request like this:
+
+           http://localhost:8080/{context-path}/servlet/{classname}
+
+         but this usage is not guaranteed to be portable.  It also
+         makes relative references to images and other resources
+         required by your servlet more complicated, so defining
+         all of your servlets (and defining a mapping to them with
+         a servlet-mapping element) is recommended.
+
+         Servlet initialization parameters can be retrieved in a
+         servlet or JSP page by calling:
+
+             String value = getServletConfig().getInitParameter("name");
+
+         where "name" matches the <param-name> element of
+         one of these initialization parameters.
+
+         You can define any number of servlets, including zero.
+    -->
+
+    <servlet>
+        <servlet-name>theServlet</servlet-name>
+        <description>
+            Servlet pour gérer les commandes de catalogues de ressources continues en libre-service
+        </description>
+        <servlet-class>fr.abes.derives.web.ConnectionServlet</servlet-class>
+        <!-- Load this servlet at server startup time -->
+        <load-on-startup>5</load-on-startup>
+    </servlet>
+
+    <!-- Define mappings that are used by the servlet container to
+         translate a particular request URI (context-relative) to a
+         particular servlet.  The examples below correspond to the
+         servlet descriptions above.  Thus, a request URI like:
+
+           http://localhost:8080/{contextpath}/graph
+
+         will be mapped to the "graph" servlet, while a request like:
+
+           http://localhost:8080/{contextpath}/saveCustomer.do
+
+         will be mapped to the "controller" servlet.
+
+         You may define any number of servlet mappings, including zero.
+         It is also legal to define more than one mapping for the same
+         servlet, if you wish to.
+    -->
+
+    <servlet-mapping>
+        <servlet-name>theServlet</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>theServlet</servlet-name>
+        <url-pattern>/listfiles</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>theServlet</servlet-name>
+        <url-pattern>/listfilesJSON</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>theServlet</servlet-name>
+        <url-pattern>/listlibrariesJSON</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>theServlet</servlet-name>
+        <url-pattern>/ordersJSON</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>theServlet</servlet-name>
+        <url-pattern>/welcome</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>theServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>theServlet</servlet-name>
+        <url-pattern>/acceptterms</url-pattern>
+    </servlet-mapping>
+
+    <!-- Define the default session timeout for your application,
+         in minutes.  From a servlet or JSP page, you can modify
+         the timeout for a particular session dynamically by using
+         HttpSession.getMaxInactiveInterval(). -->
+
+    <session-config>
+        <session-timeout>10</session-timeout>
+    </session-config>
+
+    <security-constraint>
+        <display-name>Unprotected Images Security Constraint</display-name>
+        <web-resource-collection>
+            <web-resource-name>UnProtected login page and img Area</web-resource-name>
+            <!-- OMIT auth-constraint to unprotect -->
+            <url-pattern>/img/*</url-pattern>
+            <url-pattern>/login.jsp</url-pattern>
+            <url-pattern>/demos.css</url-pattern>
+            <url-pattern>/login.jsp</url-pattern>
+            <url-pattern>/logout</url-pattern>
+        </web-resource-collection>
+    </security-constraint>
+
+    <security-constraint>
+        <display-name>Unprotected dojo Scripts Security Constraint</display-name>
+        <web-resource-collection>
+            <web-resource-name>UnProtected dojo Scripts Area</web-resource-name>
+            <!-- Define the context-relative URL(s) to be protected -->
+            <url-pattern>/dojo-release-1.5.0/*</url-pattern>
+        </web-resource-collection>
+    </security-constraint>
+
+    <security-constraint>
+        <display-name>Tomcat Server Configuration Security Constraint</display-name>
+        <web-resource-collection>
+            <web-resource-name>Protected Area</web-resource-name>
+            <!-- Define the context-relative URL(s) to be protected -->
+            <url-pattern>/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>*</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <!-- Login configuration uses form-based authentication -->
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <realm-name>ABES Exports en libre-service (login winIBW)</realm-name>
+        <form-login-config>
+            <form-login-page>/login.jsp</form-login-page>
+            <form-error-page>/error.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+
+    <!-- Security roles referenced by this web application -->
+    <security-role>
+        <role-name>*</role-name>
+    </security-role>
+
+</web-app>
