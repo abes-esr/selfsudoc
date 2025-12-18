@@ -1,4 +1,4 @@
-name: "on-push-web-changes"
+name: "on-push-batch-changes"
 
 on:
   push:
@@ -10,7 +10,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  on-push-web-changes:
+  on-push-batch-changes:
     uses: ./.github/workflows/build-pubtodockerhub.yml
     with:
       target: batch
+    secrets:
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}

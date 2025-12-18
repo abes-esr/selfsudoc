@@ -17,3 +17,6 @@ jobs:
         uses: "./.github/workflows/build-pubtodockerhub.yml"
         with:
           target: front
+        secrets:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
