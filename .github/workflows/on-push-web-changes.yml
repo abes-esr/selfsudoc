@@ -10,13 +10,9 @@ on:
 
 jobs:
   on-push-web-changes:
-    runs-on: ubuntu-latest
-    steps:
-
-      - name: "Build and publish to Docker Hub"
-        uses: "./.github/workflows/build-pubtodockerhub.yml"
-        with:
-          target: front
-        secrets:
-          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+    uses: "./.github/workflows/build-pubtodockerhub.yml"
+    with:
+      target: front
+    secrets:
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
