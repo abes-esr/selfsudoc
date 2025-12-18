@@ -68,6 +68,6 @@ RUN rm -rf /usr/local/tomcat/webapps/ROOT
 # Définir le répertoire de travail dans l'étape de déploiement
 WORKDIR /usr/local/tomcat/webapps
 # Copier l'artefact WAR construit depuis l'étape 'build-image'
-COPY --from=build-image /build/ExportsLibreService/target/*.war .
+COPY --from=build-image /build/ExportsLibreService/target/*.war ./SelfSudoc.war
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
