@@ -53,6 +53,8 @@ ENV CLASS_MAIN=fr.abes.derives.cli.Chain
 ENV ARG_MAIN="extracted cleaned grouped filtered sorted xhtml rtf pdf slk"
 ENV EOD_HOME=/data
 
+RUN mkdir -p $EOD_HOME/docBase
+
 COPY ./Technic/DonnesCodesUnm.txt $EOD_HOME/
 COPY ./Technic/datagrouploc.xsl $EOD_HOME/
 COPY ./Technic/filterRCR.xsl $EOD_HOME/
