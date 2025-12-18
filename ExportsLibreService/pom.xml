@@ -30,6 +30,9 @@
                 </dependency>
             </dependencies>
         </profile>
+        <profile>
+            <id>assembly</id>
+        </profile>
     </profiles>
 
     <packaging>war</packaging>
