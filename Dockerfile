@@ -35,7 +35,6 @@ RUN mvn --batch-mode \
 
 
 
-## Batch Renderer
 FROM eclipse-temurin:8-jre-noble AS batch-image
 
 RUN mkdir -p /lib/ext
@@ -60,3 +59,15 @@ COPY ./Technic/sort.xsl $EOD_HOME/
 COPY ./Technic/xslt $EOD_HOME/
 
 CMD ["sh", "-c", "exec java -cp /lib/*:/lib/ext/* $JAVA_OPTIONS $CLASS_MAIN $ARG_MAIN"]
+
+
+
+FROM tomcat:8.0 AS front-image
+# Supprimer l'application web par défaut de Tomcat
+RUN rm -rf /usr/local/tomcat/webapps/ROOT
+# Définir le répertoire de travail dans l'étape de déploiement
+WORKDIR /usr/local/tomcat/webapps
+# Copier l'artefact WAR construit depuis l'étape 'build-image'
+COPY --from=build-image /build/ExportsLibreService/target/*.war .
+EXPOSE 8080
+CMD ["catalina.sh", "run"]
