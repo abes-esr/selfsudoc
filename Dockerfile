@@ -35,8 +35,9 @@ RUN mvn --batch-mode \
 
 RUN mv /build/ExportsLibreService/target/SelfSudoc.war ./SelfSudoc.war
 
-RUN rm /build/ExportsLibreService/pom.xml
-RUN mv /build/ExportsLibreService/pom-filedownload.xml /build/ExportsLibreService/pom.xml
+RUN rm -f /build/ExportsLibreService/pom.xml && \
+    rm -Rf /build/ExportsLibreService/target && \
+    mv /build/ExportsLibreService/pom-filedownload.xml /build/ExportsLibreService/pom.xml
 
 RUN mvn --batch-mode \
         -Dmaven.test.skip=true \
