@@ -69,6 +69,7 @@ COPY ./Technic/datagrouploc.xsl $EOD_HOME/
 COPY ./Technic/filterRCR.xsl $EOD_HOME/
 COPY ./Technic/sort.xsl $EOD_HOME/
 COPY ./Technic/script.js $EOD_HOME/
+COPY ./Technic/Bloclogoadresse1.gif $EOD_HOME/
 COPY ./Technic/xslt/ $EOD_HOME/xslt/
 
 CMD ["sh", "-c", "exec java -cp /lib/*:/lib/ext/* $JAVA_OPTIONS $CLASS_MAIN $ARG_MAIN"]
