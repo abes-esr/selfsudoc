@@ -63,6 +63,7 @@
                 <version>3.3.1</version>
                 <configuration>
                     <warSourceDirectory>web</warSourceDirectory>
+                    <warName>SelfSudoc</warName>
                 </configuration>
             </plugin>
         </plugins>
