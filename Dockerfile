@@ -86,4 +86,5 @@ WORKDIR /usr/local/tomcat/webapps
 COPY --from=build-image /build/SelfSudoc.war ./SelfSudoc.war
 COPY --from=build-image /build/ExportsLibreService/target/*.war ./exportsdemandes.war
 EXPOSE 8080
+ENV CATALINA_OUT=/dev/stdout
 CMD ["catalina.sh", "run"]
