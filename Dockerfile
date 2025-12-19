@@ -35,14 +35,10 @@ RUN mvn --batch-mode \
 
 RUN mv /build/ExportsLibreService/target/SelfSudoc.war ./SelfSudoc.war
 
-RUN mvn --batch-mode \
-        -Dmaven.test.skip=true \
-        -Duser.timezone=Europe/Paris \
-        -Duser.language=fr \
-         install -Passembly
+RUN rm /build/ExportsLibreService/pom.xml
+RUN mv /build/ExportsLibreService/pom-filedownload.xml /build/ExportsLibreService/pom.xml
 
-RUN mvn -f ExportsLibreService/pom-filedownload.xml \
-        --batch-mode \
+RUN mvn --batch-mode \
         -Dmaven.test.skip=true \
         -Duser.timezone=Europe/Paris \
         -Duser.language=fr \
@@ -84,7 +80,7 @@ RUN rm -rf /usr/local/tomcat/webapps/ROOT
 WORKDIR /usr/local/tomcat/webapps
 # Copier l'artefact WAR construit depuis l'étape 'build-image'
 COPY --from=build-image /build/SelfSudoc.war ./SelfSudoc.war
-COPY --from=build-image /build/ExportsLibreService/target/*.war ./exportsdemandes.war
+COPY --from=build-image /build/ExportsLibreService/target/exportsdemandes.war ./exportsdemandes.war
 EXPOSE 8080
 ENV CATALINA_OUT=/dev/stdout
 CMD ["catalina.sh", "run"]
