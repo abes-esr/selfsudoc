@@ -18,7 +18,7 @@
 <xsl:param name="withcollections" select="''"></xsl:param><!-- default is empty string -->
 <xsl:param name="runtimedir" select="''"></xsl:param><!-- default is empty string -->
 
-<xsl:variable name="scriptInstance" select="Script:new('/home/batch/exportslibreservice/script.js','Cp1252')" ></xsl:variable>
+	<xsl:variable name="scriptInstance" select="Script:new('/data/script.js','Cp1252')"></xsl:variable>
 
 	<xsl:template match="/catalogue">	
 	
@@ -38,7 +38,10 @@
 				.borderodd { border-style:solid; border-width: 1px; border-color:white #dddddd black; }
 			</style> --></head>
 			<body>
-				<div><img align="left" src="/home/batch/exportslibreservice/Bloclogoadresse1.gif" width="236" height="77" /></div><br/>
+				<div>
+					<img align="left" src="/data/Bloclogoadresse1.gif" width="236" height="77"/>
+				</div>
+				<br/>
 			<div style="text-align:center" leading="100f,0f" >&nbsp;<br/>&nbsp;</div>		
 		<div style="text-align:center" leading="0f,1.5f" >
 			<font size="5" face="arial" style="bold"><b><xsl:choose>

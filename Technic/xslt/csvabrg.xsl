@@ -9,7 +9,7 @@
 <xsl:param name="withcollections" select="''"></xsl:param><!-- default is empty string -->
 <xsl:param name="runtimedir" select="''"></xsl:param><!-- default is empty string -->
 
-<xsl:variable name="scriptInstance" select="Script:new('/home/batch/exportslibreservice/script.js','Cp1252')" ></xsl:variable>
+	<xsl:variable name="scriptInstance" select="Script:new('/data/script.js','Cp1252')"></xsl:variable>
 		
 <!--  Technic private templates BEGIN -->		
 
