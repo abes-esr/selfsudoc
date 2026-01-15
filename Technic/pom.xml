@@ -68,7 +68,7 @@
                     <argLine>-Djavax.xml.parsers.SAXParserFactory=org.apache.xerces.jaxp.SAXParserFactoryImpl
                         -Djavax.xml.transform.TransformerFactory=net.sf.saxon.TransformerFactoryImpl
                         -Djavax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom=net.sf.saxon.xpath.XPathFactoryImpl
-                        -Dlog4j.configuration=${project.parent.basedir}/Renderer/conf/log4j.xml
+                        -Dlog4j.configuration=${project.parent.basedir}/Renderer/conf/log4j2.xml
                     </argLine>
                 </configuration>
             </plugin>

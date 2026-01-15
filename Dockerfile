@@ -57,9 +57,9 @@ COPY --from=build-image /build/Technic/target/*.jar /lib/Technic.jar
 COPY --from=build-image /build/Utils/target/*.jar /lib/Utils.jar
 COPY --from=build-image /build/Extract/target/*.jar /lib/Extract.jar
 COPY --from=build-image /build/Connection/target/*.jar /lib/Connection.jar
-COPY ./conf/log4j.xml /conf/log4j.xml
+COPY ./conf/log4j2.xml /conf/log4j2.xml
 
-ENV JAVA_OPTIONS="-Dlog4j.configuration=file:/conf/log4j.xml"
+ENV JAVA_OPTIONS="-Dlog4j.configurationFile=file:/conf/log4j2.xml"
 ENV CLASS_MAIN=fr.abes.derives.cli.Chain
 ENV ARG_MAIN="extracted cleaned grouped filtered sorted xhtml rtf pdf slk"
 ENV EOD_HOME=/data

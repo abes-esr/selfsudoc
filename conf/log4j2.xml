@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+	<Appenders>
+		<Console name="CONSOLE" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d %-4relative [%t] %-4level %logger{4} %x - %msg%n"/>
+		</Console>
+	</Appenders>
+
+	<Loggers>
+
+		<Logger name="fr.abes.derives.connection" level="INFO" additivity="false">
+			<AppenderRef ref="CONSOLE"/>
+		</Logger>
+
+		<Logger name="fr.abes.derives.extract" level="INFO" additivity="false">
+			<AppenderRef ref="CONSOLE"/>
+		</Logger>
+
+		<Logger name="fr.abes.derives.xsltransform" level="WARN" additivity="false">
+			<AppenderRef ref="CONSOLE"/>
+		</Logger>
+
+		<Logger name="fr.abes.derives.sax" level="WARN" additivity="false">
+			<AppenderRef ref="CONSOLE"/>
+		</Logger>
+
+		<Logger name="fr.abes.derives.cli" level="WARN" additivity="false">
+			<AppenderRef ref="CONSOLE"/>
+		</Logger>
+
+		<Logger name="fr.abes.technic" level="WARN" additivity="false">
+			<AppenderRef ref="CONSOLE"/>
+		</Logger>
+
+		<Logger name="fr.abes.utils" level="ERROR" additivity="false">
+			<AppenderRef ref="CONSOLE"/>
+		</Logger>
+
+		<Logger name="other" level="DEBUG" additivity="false">
+			<AppenderRef ref="CONSOLE"/>
+		</Logger>
+
+		<Root level="WARN">
+			<AppenderRef ref="CONSOLE"/>
+		</Root>
+
+	</Loggers>
+</Configuration>
