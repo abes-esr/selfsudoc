@@ -148,7 +148,7 @@ public class HashRedirectServlet extends HttpServlet {
             produitsDerivesDataSource = (DataSource) envContext.lookup("jdbc/ProduitsDerivesDataSource");
             loginProduitsDerives = (String) envContext.lookup("loginProduitsDerives");
             passwordProduitsDerives = (String) envContext.lookup("passwordProduitsDerives");
-            runtimeDir = (String) envContext.lookup("runtimeDir");
+            runtimeDir = (String) envContext.lookup("runtimeDir") + File.separator + "docBase";
 
         } catch (NamingException e) {
             logger.error(e.getMessage());

@@ -90,6 +90,15 @@
         <load-on-startup>5</load-on-startup>
     </servlet>
 
+    <servlet>
+        <servlet-name>downloadServlet</servlet-name>
+        <description>
+            Servlet pour le téléchargement des fichiers via hash MD5
+        </description>
+        <servlet-class>fr.abes.derives.web.HashRedirectServlet</servlet-class>
+        <load-on-startup>6</load-on-startup>
+    </servlet>
+
     <!-- Define mappings that are used by the servlet container to
          translate a particular request URI (context-relative) to a
          particular servlet.  The examples below correspond to the
@@ -139,6 +148,11 @@
     <servlet-mapping>
         <servlet-name>theServlet</servlet-name>
         <url-pattern>/acceptterms</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>downloadServlet</servlet-name>
+        <url-pattern>/download/*</url-pattern>
     </servlet-mapping>
 
     <!-- Define the default session timeout for your application,

@@ -66,7 +66,7 @@ public class RequestHelper {
     public final static String RTF = "rtf";
     public final static String SYLK = "slk";
     public final static String PDFRTF = PDF + RTF;
-    public final static String DOWNLOAD_URI = "/exportsdemandes/download/";
+    public final static String DOWNLOAD_URI = "download/";
     final static String DOCTYPE = "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">";
     final static String META = "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">";
     private static LogHelper logger = new LogHelper(RequestHelper.class);

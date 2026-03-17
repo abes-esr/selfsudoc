@@ -33,19 +33,6 @@ RUN mvn --batch-mode \
         -Duser.language=fr \
         package -Passembly
 
-RUN mv /build/ExportsLibreService/target/SelfSudoc.war ./SelfSudoc.war
-
-RUN rm -f /build/ExportsLibreService/pom.xml && \
-    rm -Rf /build/ExportsLibreService/target && \
-    mv /build/ExportsLibreService/pom-filedownload.xml /build/ExportsLibreService/pom.xml
-
-RUN mvn --batch-mode \
-        -Dmaven.test.skip=true \
-        -Duser.timezone=Europe/Paris \
-        -Duser.language=fr \
-        package -Passembly
-
-
 
 FROM eclipse-temurin:8-jre-noble AS batch
 
@@ -82,8 +69,7 @@ RUN rm -rf /usr/local/tomcat/webapps/ROOT
 # Définir le répertoire de travail dans l'étape de déploiement
 WORKDIR /usr/local/tomcat/webapps
 # Copier l'artefact WAR construit depuis l'étape 'build-image'
-COPY --from=build-image /build/SelfSudoc.war ./SelfSudoc.war
-COPY --from=build-image /build/ExportsLibreService/target/exportsdemandes.war ./exportsdemandes.war
+COPY --from=build-image /build/ExportsLibreService/target/SelfSudoc.war ./ROOT.war
 EXPOSE 8080
 ENV CATALINA_OUT=/dev/stdout
 CMD ["catalina.sh", "run"]
