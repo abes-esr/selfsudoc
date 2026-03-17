@@ -20,6 +20,7 @@ RUN mvn verify --fail-never
 # et la compilation du code Java
 COPY ./Connection/          /build/Connection/
 COPY ./ExportsLibreService/ /build/ExportsLibreService/
+COPY ./conf/log4j2.xml      /build/ExportsLibreService/web/WEB-INF
 COPY ./Extract/             /build/Extract/
 COPY ./iText-src-5.0.2/     /build/iText-src-5.0.2/
 COPY ./iTextRenderer/       /build/iTextRenderer/
