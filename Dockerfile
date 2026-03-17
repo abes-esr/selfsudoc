@@ -20,7 +20,6 @@ RUN mvn verify --fail-never
 # et la compilation du code Java
 COPY ./Connection/          /build/Connection/
 COPY ./ExportsLibreService/ /build/ExportsLibreService/
-COPY ./conf/log4j2.xml      /build/ExportsLibreService/web/WEB-INF
 COPY ./Extract/             /build/Extract/
 COPY ./iText-src-5.0.2/     /build/iText-src-5.0.2/
 COPY ./iTextRenderer/       /build/iTextRenderer/
@@ -71,6 +70,8 @@ RUN rm -rf /usr/local/tomcat/webapps/ROOT
 WORKDIR /usr/local/tomcat/webapps
 # Copier l'artefact WAR construit depuis l'étape 'build-image'
 COPY --from=build-image /build/ExportsLibreService/target/SelfSudoc.war ./ROOT.war
+COPY ./conf/log4j2.xml /conf/log4j2.xml
+ENV CATALINA_OPTS="-Dlog4j.configurationFile=/conf/log4j2.xml"
 EXPOSE 8080
 ENV CATALINA_OUT=/dev/stdout
 CMD ["catalina.sh", "run"]
