@@ -29,7 +29,7 @@ public class HashRedirectServlet extends HttpServlet {
      * Remove MD5 obfuscation from request by querying DataBase and redirect to file to serve
      */
     private static final long serialVersionUID = 4974137915514932606L;
-    final private static String REGEX = "/(.*)/download/(.*)";
+    final private static String REGEX = "/download/(.*)";
     final private static Pattern PATTERN = Pattern.compile(REGEX);
     final private static String REGEX_EXTENSION = "(.+)\\.(.+)";
     final private static Pattern PATTERN_EXTENSION = Pattern.compile(REGEX_EXTENSION);
@@ -184,19 +184,14 @@ public class HashRedirectServlet extends HttpServlet {
         final String CSV = "csv";
 
         String uri = req.getRequestURI();
-        //System.out.println("URI : " + uri);
+        logger.debug("URI : " + uri);
 
         Matcher matcher = PATTERN.matcher(uri);
 
         if (matcher.find()) {
 
-            String contextName = matcher.group(1);
-            if (!("/" + contextName).equals(getServletContext().getContextPath())) {
-                logger.warn("contextName", contextName);
-                logger.warn("getContextPath()", getServletContext().getContextPath());
-            }
-            String queriedAfterMapping = matcher.group(2);
-            //System.out.println("queriedAfterMapping : " + queriedAfterMapping);
+            String queriedAfterMapping = matcher.group(1);
+            logger.debug("queriedAfterMapping : " + queriedAfterMapping);
 
             if (queriedAfterMapping == null || "".equals(queriedAfterMapping.trim())) {
                 // do nothing
