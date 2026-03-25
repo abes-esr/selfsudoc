@@ -72,6 +72,8 @@ WORKDIR /usr/local/tomcat/webapps
 COPY --from=build-image /build/ExportsLibreService/target/SelfSudoc.war ./ROOT.war
 COPY ./conf/log4j2.xml /conf/log4j2.xml
 ENV CATALINA_OPTS="-Dlog4j.configurationFile=/conf/log4j2.xml"
-EXPOSE 8080
 ENV CATALINA_OUT=/dev/stdout
+EXPOSE 8080
+HEALTHCHECK --interval=30s --timeout=5s --retries=3 --start-period=40s \
+  CMD curl -s http://localhost:8080/selfsudoc/ | grep -q "<html" || exit 1
 CMD ["catalina.sh", "run"]
