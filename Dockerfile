@@ -59,6 +59,9 @@ COPY ./Technic/script.js $EOD_HOME/
 COPY ./Technic/Bloclogoadresse1.gif $EOD_HOME/
 COPY ./Technic/xslt/ $EOD_HOME/xslt/
 
+HEALTHCHECK --interval=30s --timeout=5s --retries=3 --start-period=30s \
+  CMD test $(find /tmp/selfsudoc_heartbeat -mmin -1) || exit 1
+
 CMD ["sh", "-c", "exec java -cp /lib/*:/lib/ext/* $JAVA_OPTIONS $CLASS_MAIN $ARG_MAIN"]
 
 

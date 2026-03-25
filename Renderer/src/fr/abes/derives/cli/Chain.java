@@ -1,36 +1,20 @@
 package fr.abes.derives.cli;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Reader;
-import java.io.UnsupportedEncodingException;
-import java.io.Writer;
+import fr.abes.derives.xsltransform.TransformWrapper;
+import fr.abes.technic.RCRUtils;
+import fr.abes.utils.BufferedRW;
+import fr.abes.utils.HealthHeartbeat;
+import fr.abes.utils.LogHelper;
+import org.xml.sax.SAXException;
+
+import javax.xml.transform.TransformerConfigurationException;
+import java.io.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.AbstractMap.SimpleImmutableEntry;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Scanner;
-import java.util.Set;
-
-import javax.xml.transform.TransformerConfigurationException;
-
-import org.xml.sax.SAXException;
-
-import fr.abes.derives.xsltransform.TransformWrapper;
-import fr.abes.technic.RCRUtils;
-import fr.abes.utils.BufferedRW;
-import fr.abes.utils.LogHelper;
+import java.util.*;
 
 public class Chain {
 
@@ -355,6 +339,7 @@ public class Chain {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		HealthHeartbeat.touch();
 		
 		logger.info("java.home=",System.getProperty("java.home"));
 		logger.info("java.vendor=",System.getProperty("java.vendor"));
@@ -516,6 +501,7 @@ public class Chain {
 		
 
 		do {// infinite loop
+			HealthHeartbeat.touch();
 
 			for (IFileWorker fileWorker : workers) { // for each worker of the chain
 				
@@ -562,7 +548,7 @@ public class Chain {
 				ResultSet resultSet = null;
 
 					for (RcrJobWrapper job : jobs) { //for each waiting rcr job demand
-						
+						HealthHeartbeat.touch();
 						boolean rollback = false;
 						String rollbackMessage =null;
 
@@ -666,11 +652,7 @@ public class Chain {
 			} catch (InterruptedException e) {
 				logger.debug(e.getMessage());
 			}
-
-		}
-
-		while (true);
-
+		} while (true);
 	}
 
 }

@@ -1,30 +1,15 @@
 package fr.abes.derives.extract;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Writer;
-import java.sql.Connection;
-import java.sql.Driver;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
-import java.util.AbstractMap.SimpleImmutableEntry;
-
 import fr.abes.derives.connection.ConnectionHelper;
 import fr.abes.derives.connection.QueryProduitsDerives;
 import fr.abes.utils.BufferedRW;
+import fr.abes.utils.HealthHeartbeat;
 import fr.abes.utils.LogHelper;
+
+import java.io.*;
+import java.sql.*;
+import java.util.AbstractMap.SimpleImmutableEntry;
+import java.util.*;
 
 public class Extract {
 
@@ -212,6 +197,7 @@ public class Extract {
      * @param args
      */
     public static void main(String[] args) {
+        HealthHeartbeat.touch();
 
         logger.info("java.home=", System.getProperty("java.home"));
         logger.info("java.vendor=", System.getProperty("java.vendor"));
@@ -285,14 +271,15 @@ public class Extract {
         Map<Long, OrderWrapper> orders = null;
 
         do {
+            HealthHeartbeat.touch();
             orders = mapWaitingOrders(connProduitsDerives, EXTRACTEDDIRECTORY);
             Set<Long> ordersIDs = orders.keySet();
 
             try {//try because maybe we have lost connection to SudocXML
 
                 for (Long orderID : ordersIDs) { // for each order
-                    if (orderID != 0) // 0 = fake we ignore
-                    {
+                    HealthHeartbeat.touch();
+                    if (orderID != 0) { // 0 = fake we ignore
                         OrderWrapper export = orders.get(orderID);
                         logger.info("order ID=" + orderID, export.toString());
                         Map<String, Set<String>> rcrS = export.getRcrS();
@@ -352,8 +339,7 @@ public class Extract {
             } catch (InterruptedException e) {
                 logger.debug(e.getMessage());
             }
-        }
-        while (true);
+        } while (true);
     }
 
     private static Map<Long, OrderWrapper> mapWaitingOrders(Connection connProduitsDerives, String extractedDirectory) {
