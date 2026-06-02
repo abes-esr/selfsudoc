@@ -1,10 +1,14 @@
 package fr.abes.derives.extract;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.Writer;
+import fr.abes.derives.connection.ConnectionHelper;
+import fr.abes.utils.BufferedRW;
+import fr.abes.utils.LogHelper;
+import oracle.jdbc.OracleResultSet;
+import oracle.jdbc.OracleResultSetMetaData;
+import oracle.jdbc.OracleTypes;
+import oracle.sql.BLOB;
+
+import java.io.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -13,14 +17,6 @@ import java.util.AbstractMap.SimpleImmutableEntry;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-
-import oracle.jdbc.OracleResultSet;
-import oracle.jdbc.OracleResultSetMetaData;
-import oracle.jdbc.OracleTypes;
-import oracle.sql.BLOB;
-import fr.abes.derives.connection.ConnectionHelper;
-import fr.abes.utils.BufferedRW;
-import fr.abes.utils.LogHelper;
 
 public class QuerySudocXML {
 
@@ -154,7 +150,7 @@ public class QuerySudocXML {
 
             while (orset.next()) {
                 b = orset.getBLOB(1);
-                r = new BufferedReader(new InputStreamReader(b.binaryStreamValue()));
+                r = new BufferedReader(new InputStreamReader(b.binaryStreamValue(), BufferedRW.UTF8));
                 while ((line = r.readLine()) != null) {
                     output.write(line);
                 }
@@ -229,7 +225,7 @@ public class QuerySudocXML {
             while (resultSet.next()) {
                 noticesNb = resultSet.getLong(1);
                 rcr = resultSet.getString(2);
-                if (!"4° SS 538".equals(rcr) && !rcr.contains("-")) {
+                if (!"4ï¿½ SS 538".equals(rcr) && !rcr.contains("-")) {
                     if (rcr.length() > 9) {
                         logger.warn("RCR label >9 car. START" + rcr + "STOP");
                     } else {
