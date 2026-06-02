@@ -225,7 +225,7 @@ public class QuerySudocXML {
             while (resultSet.next()) {
                 noticesNb = resultSet.getLong(1);
                 rcr = resultSet.getString(2);
-                if (!"4� SS 538".equals(rcr) && !rcr.contains("-")) {
+                if (!"4\u00B0 SS 538".equals(rcr) && !rcr.contains("-")) {
                     if (rcr.length() > 9) {
                         logger.warn("RCR label >9 car. START" + rcr + "STOP");
                     } else {
