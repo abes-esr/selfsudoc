@@ -36,6 +36,14 @@ RUN mvn --batch-mode \
 
 FROM eclipse-temurin:8-jre-noble AS batch
 
+# Installation et configuration de la locale FR
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install locales \
+    && sed -i '/fr_FR.UTF-8/s/^# //g' /etc/locale.gen && locale-gen \
+    && rm -rf /var/lib/apt/lists/*
+ENV LANG=fr_FR.UTF-8
+ENV LANGUAGE=fr_FR:fr
+ENV LC_ALL=fr_FR.UTF-8
+
 RUN mkdir -p /lib/ext
 COPY --from=build-image /build/iText-src-5.0.2/target/*.jar /lib/iText-src-5.0.2-0.0.1.jar
 COPY --from=build-image /build/iTextRenderer/target/*.jar /lib/iTextRenderer.jar
@@ -67,6 +75,13 @@ CMD ["sh", "-c", "exec java -cp /lib/*:/lib/ext/* $JAVA_OPTIONS $CLASS_MAIN $ARG
 
 
 FROM tomcat:8-jre8 AS front
+# Installation et configuration de la locale FR
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install locales \
+    && sed -i '/fr_FR.UTF-8/s/^# //g' /etc/locale.gen && locale-gen \
+    && rm -rf /var/lib/apt/lists/*
+ENV LANG=fr_FR.UTF-8
+ENV LANGUAGE=fr_FR:fr
+ENV LC_ALL=fr_FR.UTF-8
 # Supprimer l'application web par défaut de Tomcat
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
 # Définir le répertoire de travail dans l'étape de déploiement
