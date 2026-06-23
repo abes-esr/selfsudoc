@@ -1,20 +1,18 @@
 package fr.abes.technic;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Map;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 public class DataCodeScannerTest {
 	
-	//TODO TMX : add UTF-8/CP1252 test
-
 	private final static String FILENAME = "DonnesCodesUnm.txt";
 	private static DataCodeScanner scanner = null;
 	Map<String, String> result = null;
@@ -36,7 +34,7 @@ public class DataCodeScannerTest {
 	public void testGetDatas() {
 
 		try {
-			scanner = new DataCodeScanner(FILENAME,"Cp1252");
+			scanner = new DataCodeScanner(FILENAME, "UTF-8");
 		} catch (FileNotFoundException e) {
 			fail(e.getMessage());
 		} catch (IOException e) {

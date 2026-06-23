@@ -93,7 +93,7 @@ public class Chain {
 			configuration.list(System.out);
 			
 			/*
-			 * Base Exports à la demande
+			 * Base Exports Ã  la demande
 			 */
 
 			DBHOSTNAME = configuration.getProperty(KEY_DBHOSTNAME);
@@ -156,8 +156,8 @@ public class Chain {
 	
 
 	/**
-	 * 
-	 * Connexion à la database pour calculer en fonction des status la liste des demandes en attente de traitement 
+	 *
+	 * Connexion Ã  la database pour calculer en fonction des status la liste des demandes en attente de traitement
 	 * 
 	 * @param conn
 	 * @param prefixFileName
@@ -428,9 +428,9 @@ public class Chain {
 		IFileWorker rtf = null;
 		IFileWorker pdf = null;
 		IFileWorker slk = null;
-		
-		
-		Map<String, String> dataCodes = SAXWorker.readDataCodes(DATACODESFILENAME,"Cp1252");
+
+
+		Map<String, String> dataCodes = SAXWorker.readDataCodes(DATACODESFILENAME, "UTF-8");
 
 		try {
 			
