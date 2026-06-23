@@ -93,7 +93,7 @@ public class Chain {
 			configuration.list(System.out);
 			
 			/*
-			 * Base Exports � la demande
+			 * Base Exports à la demande
 			 */
 
 			DBHOSTNAME = configuration.getProperty(KEY_DBHOSTNAME);
@@ -156,8 +156,8 @@ public class Chain {
 	
 
 	/**
-	 * 
-	 * Connexion � la database pour calculer en fonction des status la liste des demandes en attente de traitement 
+	 *
+	 * Connexion à la database pour calculer en fonction des status la liste des demandes en attente de traitement
 	 * 
 	 * @param conn
 	 * @param prefixFileName
