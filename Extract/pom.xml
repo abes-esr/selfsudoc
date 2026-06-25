@@ -10,12 +10,6 @@
         <groupId>fr.abes.selfsudoc</groupId>
     </parent>
 
-    <properties>
-        <project.build.sourceEncoding>Cp1252</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
-    </properties>
-
     <profiles>
         <profile>
             <id>localhost</id>
