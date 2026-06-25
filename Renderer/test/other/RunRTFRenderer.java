@@ -1,17 +1,11 @@
 package other;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.Reader;
-import java.io.UnsupportedEncodingException;
-import java.io.Writer;
-
 import fr.abes.derives.cli.IFileWorker;
 import fr.abes.derives.cli.RTFWorker;
-
 import fr.abes.derives.cli.WorkerException;
 import fr.abes.utils.BufferedRW;
+
+import java.io.*;
 
 public class RunRTFRenderer {
 	
@@ -80,7 +74,7 @@ public class RunRTFRenderer {
 
 				System.out.println("trying to rename to " + outNameWithExt);
 				File f = new File(outNameWithExt);
-				boolean success = BufferedRW.moveNFSProof(tmpOut, f, BufferedRW.UTF8); //NFS Proof
+                boolean success = BufferedRW.moveNFSProof(tmpOut, f, BufferedRW.ISOLATIN1); //NFS Proof (binaire : byte-transparent, voir AbstractFileWorker)
 				if (success) {
 					System.out.println("renamed OK");
 					bytesLength = f.length();

@@ -5,14 +5,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class LogHelper {
-	
-	//Savoir si la configuration a été réalisée
+
+    //Savoir si la configuration a Ã©tÃ© rÃ©alisÃ©e
     private static boolean initialized = false;
 
     private Logger logger = null;
 
     /**
-     * Constructeur par défaut
+     * Constructeur par dÃ©faut
      * 
      * @@param category
      */
@@ -27,7 +27,7 @@ public class LogHelper {
 
     private static synchronized void init() {
         if (!initialized) {
-            //Sous Eclipse l'initialisation se résume à affecter une variable
+            //Sous Eclipse l'initialisation se rÃ©sume Ã  affecter une variable
             // de la JVM :
             //-Dlog4j.configuration=file:///C:\workspace\ExportOnDemand\conf\log4j.xml
             initialized = true;

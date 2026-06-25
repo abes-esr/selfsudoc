@@ -30,7 +30,7 @@ public class LogoutCommand implements ICommand {
                 .append("<html>")
                 .append("<head>")
                 .append(RequestHelper.META)
-                .append("<title>Déconnexion</title>")
+                .append("<title>DÃ©connexion</title>")
                 .append("</head>")
                 .append("<body>")
                 .append("<div><b>Au revoir</b> ")
@@ -38,7 +38,7 @@ public class LogoutCommand implements ICommand {
                 .append(" (")
                 .append(RequestHelper.MSG_NOT_AUTHENTICATED)
                 .append(")")
-                .append("</div><br></br><div><a href=\".\">Retour à la page d'accueil</a></div>")
+                .append("</div><br></br><div><a href=\".\">Retour Ã  la page d'accueil</a></div>")
                 .append("</body>")
                 .append("</html>");
         RequestHelper.errorUnauthorizedHTML(helper.getResponse(), new Exception(strb.toString()));

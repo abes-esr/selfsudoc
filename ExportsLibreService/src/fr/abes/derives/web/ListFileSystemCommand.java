@@ -60,7 +60,7 @@ public class ListFileSystemCommand implements ICommand {
         logger.debug("admin=" + admin);
 
         if (!admin) {
-            String message = "<b>Accés restreint</b> (" + RequestHelper.MSG_NOT_ADMINISTRATOR + ")";
+            String message = "<b>AccÃ¨s restreint</b> (" + RequestHelper.MSG_NOT_ADMINISTRATOR + ")";
             RequestHelper.errorUnauthorizedHTML(helper.getResponse(), new Exception(message));
             return null;
         }

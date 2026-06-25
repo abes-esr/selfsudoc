@@ -1,13 +1,13 @@
 package fr.abes.derives.cli;
 
+import fr.abes.utils.BufferedRW;
+import fr.abes.utils.LogHelper;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.Writer;
 import java.util.Set;
-
-import fr.abes.utils.BufferedRW;
-import fr.abes.utils.LogHelper;
 
 public abstract class AbstractFileWorker implements IFileWorker {
 	
@@ -111,6 +111,11 @@ public abstract class AbstractFileWorker implements IFileWorker {
 		String charsetName = null;
 		boolean classIsPDFOrRTF = "fr.abes.derives.cli.RTFWorker".equals(fileWorker.getClass().getName())
 				|| "fr.abes.derives.cli.PDFWorker".equals(fileWorker.getClass().getName());
+        // PDF/RTF sont des sorties BINAIRES (iText ecrit les octets directement dans tmpOut).
+        // Ce charset ne sert que si Files.move echoue et que moveNFSProof bascule sur la copie
+        // caractere par caractere (fallback NFS) : ISO-8859-1 est le seul charset byte-transparent
+        // (0x00-0xFF mappes 1:1) qui ne corrompt pas le binaire. NE PAS passer en UTF-8 ici,
+        // sinon les octets >= 0x80 deviennent U+FFFD et le PDF/RTF est casse.
 		if (classIsPDFOrRTF) {
 				charsetName = BufferedRW.ISOLATIN1;
 			} else {

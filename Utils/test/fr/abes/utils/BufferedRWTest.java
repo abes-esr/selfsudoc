@@ -1,20 +1,13 @@
 package fr.abes.utils;
 
-import static org.junit.Assert.assertTrue;
-
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.io.UnsupportedEncodingException;
-import java.io.Writer;
-import java.nio.file.Files;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.io.*;
+import java.nio.file.Files;
+
+import static org.junit.Assert.assertTrue;
 
 public class BufferedRWTest {
 	
@@ -67,11 +60,11 @@ public class BufferedRWTest {
 		
 		long originLength = origin.length();
 		System.out.println("taille fichier origine="+originLength);
-		System.out.println("prêt à copier vers "+destinationName);		
+        System.out.println("prÃªt Ã  copier vers " + destinationName);
 		boolean success = BufferedRW.copy(origin, destination,BufferedRW.UTF8);
 		long destinationLength = destination.length();
 		System.out.println("taille fichier destination="+destinationLength);
-		assertTrue("la copie a échouée ",success&&destinationLength==originLength);
+        assertTrue("la copie a Ã©chouÃ©e ", success && destinationLength == originLength);
 		
 	}
 	
@@ -80,12 +73,12 @@ public class BufferedRWTest {
 		
 		long originLength = origin.length();
 		System.out.println("taille fichier origine="+originLength);
-		System.out.println("prêt à renommer vers "+destinationName);
+        System.out.println("prÃªt Ã  renommer vers " + destinationName);
 		//boolean success = origin.renameTo(destination);
 		Files.move(origin.toPath(), destination.toPath());
 		long destinationLength = destination.length();
 		System.out.println("taille fichier destination="+destinationLength);
-		assertTrue("le rename a échoué ",
+        assertTrue("le rename a Ã©chouÃ© ",
 				//success&&
 				destinationLength==originLength);
 		
@@ -103,12 +96,12 @@ public class BufferedRWTest {
 //		
 //		long originLength = origin.length();
 //		System.out.println("taille fichier origine="+originLength);
-//		System.out.println("prêt à renommer NFS proof vers "+nfsFileName);
+//		System.out.println("prÃªt Ã  renommer NFS proof vers "+nfsFileName);
 //		
 //		boolean success = BufferedRW.moveNFSProof(origin, nfsFile, BufferedRW.UTF8);
 //		long nfsFileLength = nfsFile.length();
 //		System.out.println("taille fichier NFS="+nfsFileLength);
-//		assertTrue("le rename NFS proof a échoué ",success&&nfsFileLength==originLength);
+//		assertTrue("le rename NFS proof a Ã©chouÃ© ",success&&nfsFileLength==originLength);
 //		
 //		nfsFile.delete();
 //
